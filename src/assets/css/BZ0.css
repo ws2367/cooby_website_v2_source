@@ -6,10 +6,8 @@
   right: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2147483647;
   display: none;
@@ -20,15 +18,10 @@
   width: 288px;
   height: 455px;
   background: #FFFFFF;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 27px 24px 24px 24px;
   border: 1px solid #F5F5F5;
   box-shadow: 1px 12px 40px rgba(0, 0, 0, 0.25);
@@ -65,5 +58,4 @@
   @media screen, (max-width: 320px) {
     #cooby-insight-btn-and-ps {
       width: 100%;
-      -webkit-box-align: center;
-              align-items: center; } }
+      align-items: center; } }

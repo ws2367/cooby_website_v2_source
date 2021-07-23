@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    @@include("partials/head.html", {
+    @@include("../partials/head.html", {
     "pageTitle": "Cooby | Take Control of Your WhatsApp Chats",
     "ogImage": "https://cooby.co/assets/img/preview-images/meta_tags_extension.png",
     "description": "Declutter your mindspace, reduce noise and organize your chats"
@@ -19,7 +19,7 @@
 
     <!-- NAVBAR
     ================================================== -->
-    @@include("partials/navbar-ext.html", {
+    @@include("../partials/navbar-ext.html", {
     "classList": "navbar-light bg-white",
     "container": "container"
     })
@@ -54,7 +54,7 @@
                 </div>
                 <!-- BRANDS (for web)
                 ================================================== -->
-                @@include("partials/brands.html", {
+                @@include("../partials/brands.html", {
                 "classList": "row justify-content-center d-none d-md-flex",
                 })
               </section>
@@ -63,14 +63,14 @@
           
           <div class="order-2 col-12 col-md-6 px-0">
             <video playsinline autoplay muted
-              src="assets/video/features/wa_extension.mp4"
+              src="/assets/video/features/wa_extension.mp4"
               class="img-fluid float-end mw-sm-150 mb-md-0 mt-2 mt-md-4"
               data-aos="fade-left"></video>
           </div>
 
           <!-- BRANDS (for mobile)
           ================================================== -->
-          @@include("partials/brands.html", {
+          @@include("../partials/brands.html", {
           "classList": "order-3 row justify-content-center col-12 d-md-none",
           })
 
@@ -83,7 +83,7 @@
     <section class="py-7 py-md-10 pb-4 bg-cooby-light-gray d-flex justify-content-center">
       <div class="col-12 col-md-6">
         <div class="mb-2">
-          <img src="assets/img/brands/Logo_HustleFund.png" style="width: 132px;">
+          <img src="/assets/img/brands/Logo_HustleFund.png" style="width: 132px;">
         </div>
         <p class="d-block mb-2 quote-paragraph">
           "I've been searching for a solution to manage my out-of-control Whatsapp inbox. Cooby instantly brings order by allowing me to create lists of priority folks to respond to, and muting the group chats that can be incredibly distracting"
@@ -92,14 +92,14 @@
           <div class="col-auto">
             <!-- Avatar -->
             <div class="avatar avatar-lg">
-              <img class="avatar-img rounded-circle article-meta-avatar" src="assets/img/avatars/shiyan.png">
+              <img class="avatar-img rounded-circle article-meta-avatar" src="/assets/img/avatars/shiyan.png">
             </div>
           </div>
           <div class="col ml-n5">
             <!-- Name -->
             <h6 class="text-uppercase mb-0 article-author">Shiyan Koh</h6>
             <!-- Date -->
-            <time class="font-size-xs text-gray article-published-date">Managing Partner at Hustle Fund</time>
+            <div class="font-size-xs text-gray">Managing Partner at Hustle Fund</div>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
 
         <div class="row mb-8 mb-md-6 mb-lg-4">
           <div class="col-12 order-2 col-md-6 order-md-1">
-            <img class="img-fluid img-responsive" src="assets/img/extension/extension-pain_point_0.png" alt="">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_0.png" alt="">
           </div>
           <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center">
             <div>
@@ -126,7 +126,7 @@
       
         <div class="row mb-8 mb-md-6 mb-lg-4">
           <div class="col-12 order-2 col-md-6 order-md-2">
-            <img class="img-fluid img-responsive" src="assets/img/extension/extension-pain_point_1.png" alt="">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_1.png" alt="">
           </div>
           <div class="col-12 order-1 col-md-6 order-md-1 d-flex align-items-center">
             <div>
@@ -141,7 +141,7 @@
 
         <div class="row">
           <div class="col-12 order-2 col-md-6 order-md-1">
-            <img class="img-fluid img-responsive" src="assets/img/extension/extension-pain_point_2.png" alt="">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_2.png" alt="">
           </div>
           <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center">
             <div>
@@ -166,7 +166,7 @@
           It's easy to lose track of conversations. Use Unread, Awaiting Reply, Needs Reply tabs to find a chat thread much faster and never miss a message again!
         </p>
         <div>
-          <img class="img-fluid img-responsive" src="assets/img/extension/extension-take_control.png">
+          <img class="img-fluid img-responsive" src="/assets/img/extension/extension-take_control.png">
         </div>
       </div>
     </section>
@@ -187,7 +187,7 @@
           </div>
 
           <div class="col-12 col-md-7 text-center">
-            <img class="img-fluid img-responsive" src="assets/img/extension/extension-privacy.png">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-privacy.png">
           </div>
 
         </div>
@@ -255,13 +255,13 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
+    @@include("../partials/footer.html", {
     "classList": ""
     })
 
     <!-- JAVASCRIPT
     ================================================== -->
-    @@include("partials/scripts.html")
+    @@include("../partials/scripts.html")
   </body>
   <style>
      /* for Chrome */

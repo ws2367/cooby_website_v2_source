@@ -860,13 +860,13 @@
     <section class="pt-7 pt-md-10 bg-cooby-light-gray">
       <div class="container d-flex flex-column text-center justify-content-center">
         <h2 class="font-weight-bold">Take Control of Your WhatsApp Chats</h2>
-        <p class="d-block px-4 px-md-8 px-lg-10">
+        <p class="px-4 px-md-8 px-lg-10">
           It's easy to lose track of conversations. Use Unread, Awaiting Reply, Needs Reply tabs to find a chat thread much faster and never miss a message again!
         </p>
-        <div class="d-flex aligm-items-end">
+        <div>
           <video playsinline autoplay muted
               src="/assets/video/features/extension_features.mp4"
-              class="img-fluid img-responsive float-end mb-0 mt-2 mt-md-4"
+              class="img-fluid float-end mb-0 mt-2 mt-md-4"
               data-aos="fade-left"></video>
           <!-- <img class="img-fluid img-responsive" src="/assets/img/extension/extension-take_control.png"> -->
         </div>
@@ -944,25 +944,24 @@
       </div>
 
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="row col-12 col-md-10 col-lg-7 d-flex flex-column flex-md-row justify-content-between">
+        <div class="d-flex flex-column flex-md-row justify-content-center">
             <a 
               target="_blank"
-              class="col-12 order-2 col-md-5 order-md-1 btn btn-primary-soft lift mb-6"
+              class="roadmap-cta-btn btn btn-primary-soft lift mb-6"
               href="https://feedback.cooby.co"
               onclick="gaTracking('visit_roadmap', 'click', 'IndexSeeRoadMapBtn')"
             >
               See Roadmap
             </a>
+            <span style="width: 36px;"></span>
             <a
               target="_blank" 
-              class="col-12 order-1 col-md-5 order-md-2 btn btn-primary lift mb-6"
+              class="roadmap-cta-btn btn btn-primary lift mb-6"
               href="https://changelog.cooby.co"
               onclick="gaTracking('visit_changelog', 'click', 'IndexVisitRecentUpdatesBtn')"
             >
               View Recent Updates
             </a>
-          </div>
         </div>
       </div>
 
@@ -1100,6 +1099,15 @@
 
     .review-session-btn {
       width: 260px;
+    }
+
+    .roadmap-cta-btn {
+      width: 220px;
+    }
+    @media only screen and (max-width: 768px) {
+      .roadmap-cta-btn {
+        width: 100%;
+      }
     }
   </style>
 </html>

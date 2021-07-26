@@ -130,15 +130,15 @@
 
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="../assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="../assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="../assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="../assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="../assets/libs/quill/dist/quill.core.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -146,7 +146,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -167,16 +167,7 @@
     <!-- End Facebook Pixel Code -->
 
   </head>
-  <style>
-
-    @media screen and (max-width: 320px){
-      #insight_bz_0 {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
-  <body class="font-eng">
-
+  <body class="bg-light">
 
     <!-- NAVBAR
     ================================================== -->
@@ -205,10 +196,10 @@
                     Trusted by over <span data-toggle="countup" data-from="0" data-to="2000" data-aos data-aos-id="countup:in">0</span> salespeople worldwide.
                   </p>
                   <div class="pt-1">
-                    <img src="./assets/img/brands/customers/taiwan_insurance_en.png" class="brand-logo">
-                    <img src="./assets/img/brands/customers/cathy_en.png" class="brand-logo"><br>
-                    <img src="./assets/img/brands/customers/nan-shan_en.png" class="brand-logo">
-                    <img src="./assets/img/brands/customers/alibaba_en.png" class="brand-logo">
+                    <img src="../assets/img/brands/customers/taiwan_insurance_en.png" class="brand-logo">
+                    <img src="../assets/img/brands/customers/cathy_en.png" class="brand-logo"><br>
+                    <img src="../assets/img/brands/customers/nan-shan_en.png" class="brand-logo">
+                    <img src="../assets/img/brands/customers/alibaba_en.png" class="brand-logo">
                   </div>
                   <ul class="list-group">
                     <li class="compressed-list bg-cooby-light-gray" style="list-style: none; margin:30px auto 10px 0;">
@@ -370,7 +361,7 @@
 
             <!-- Image -->
             <div class="text-center">
-              <img src="./assets/img/illustrations/schedule.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+              <img src="../assets/img/illustrations/schedule.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
             </div>
 
             <!-- Heading -->
@@ -409,7 +400,7 @@
 
             <!-- Image -->
             <div class="text-center">
-              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+              <img src="../assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
             </div>
 
             <!-- Heading -->
@@ -418,7 +409,7 @@
             </h2>
             <div class="text-center">
               <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1 mb-4" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
-                <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+                <img src="../assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
               </a>
               <!-- Text -->
               <p class="font-size-lg text-center text-muted">
@@ -442,13 +433,13 @@
     </div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white cooby-shadow fixed-top font-eng">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom font-eng cooby-shadow fixed-top">
       <div class="container">
 
         <!-- Brand -->
 
-        <a class="navbar-brand" href="/">
-          <img src="./assets/img/brand.svg" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand mr-8" href="/extension">
+          <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
         </a>
 
         <!-- Toggler -->
@@ -465,74 +456,41 @@
           </button>
 
           <!-- Navigation -->
-          <ul class="navbar-nav ml-auto" style="margin:auto;">
+          <ul class="navbar-nav">
             <li class="nav-item dropdown d-none">
               <a class="nav-link dropdown-toggle text-muted" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Use Cases
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./use-cases/insurance.html">Insurance</a>
-                <a class="dropdown-item" href="./use-cases/direct-sales.html">Direct Sales</a>
+                <a class="dropdown-item" href="../use-cases/insurance.html">Insurance</a>
+                <a class="dropdown-item" href="../use-cases/direct-sales.html">Direct Sales</a>
               </div>
             </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" id="navbarProduct" href="./features.html">
-                Features
-              </a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" id="navbarService" href="./extension.html">
-                WhatsApp Tabs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="navbarContact" href="./insights.html">
-                Cooby Insights
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="navbarTeam" href="./pricing.html">
+              <a class="nav-link" id="navbarTeam" href="../extension/pricing.html">
                 Pricing
               </a>
             </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" id="navbarTeam" href="./blog.html">
-                Blog
-              </a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" id="navbarContact" href="./support.html">
+              <a class="nav-link" id="navbarContact" href="../extension/support.html">
                 Support
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-muted" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Language
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item active" href=".">English</a>
-                <a class="dropdown-item" href="./zh-tw">繁體中文</a>
-              </div>
-             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto d-none" style="margin-right: 1rem;">
             <li class="nav-item">
-              <a id="signInSignUp"
-                 href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
-                 target="_blank"
-                 onclick="gaTracking('log_in', 'click', 'Navbar')"
-                 >
-                Log In
+              <a class="nav-link" id="navbarContact" href="../extension/privacy.html">
+                Privacy
               </a>
             </li>
           </ul>
+          <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+          </ul>
           <!-- Button -->
-          <div class="text-center pb-md-0 pb-8  d-none">
+          <div class="text-center pb-md-0 pb-8">
             <a class="navbar-btn btn btn-sm btn-primary lift"
-               data-toggle="modal"
-               href="#modalSignupHorizontal"
-               onclick="gaTracking('sign_up', 'click', 'Navbar')">
-              Try Now
+               target="_blank"
+               href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm"
+               onclick="gaTracking('install_extension', 'click', 'NavbarAddToChromeBtn')">
+              Add to Chrome
             </a>
           </div>
 
@@ -543,126 +501,198 @@
     </nav>
 
 
-
-    <!-- INSIGHT
+    <!-- CONTENT
     ================================================== -->
-    <section class="pb-2 pt-12 bg-cooby-light-gray">
-      <div class="container pt-md-4 pb-6">
-        <div id='insight_bz_0' class="row justify-content-center">
-          <div class="col-12 col-md-6 pt-6" data-aos="fade-right">
-            <div id='insight_bz0_slogan'>
-              <!-- Preheading -->
-              <h6 class="text-uppercase text-primary font-weight-bold">
-                Track and organize your chats
-              </h6>
-              <h1 class="font-weight-bold">
-                Take Control of Your WhatsApp Chats
-              </h1>
-            </div>
-            <div id="try-btn-and-aux-text" class="table-container">
-              <p class="font-size-lg text-muted mb-7">
-                Too many chats create noise in your WhatsApp inbox? Try <b>WhatsApp Tabs</b>. Declutter your mindspace and reduce anxiety.<br><br>
-                 Organize your chats into tabs. Use <b>Inbox, Awaiting Reply, Needs Reply</b> tabs to keep your WhatsApp inbox under control.
-              </p>
-              <section class="d-flex flex-column align-items-start">
-                <div>
-                  <div>
-                    <!-- <a class="btn btn-outline btn-secondary-soft mb-6 disabled">Coming Soon &nbsp;<span class="font-weight-light">just a little more time </span></a> -->
-                    <a target="_blank"
-                       class="btn btn-primary lift mb-6"
-                       onclick="gaTracking('install_extension', 'click', 'AddToChromeBtn')"
-                       href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0">
-                       Add to Chrome &nbsp;
-                       <span class="font-weight-light">It's free</span>
-                    </a>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <video playsinline autoplay muted
-              src="assets/video/features/wa_extension.mp4"
-              class="img-fluid float-end mw-150 mb-6 mb-md-0"
-              data-aos="fade-left"></video>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-
-    <!-- LOOM WALKTHROUGH
-        ================================================== -->
-    <section class="bg-cooby-light-gray d-none">
-      <div class="container py-8 border-bottom-cooby">
-        <div class="row justify-content-center">
-          <div class="col-12 order-md-2"><!--col-md-6 col-lg-7 -->
-            <div style="position: relative; padding-bottom: 56.782334384858046%; height: 0;"><iframe src="https://www.loom.com/embed/eac131d700794f07a774a48cbfef9933" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- CURVE
-    ================================================== -->
-    <div class="d-none position-relative mt-n16">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        <svg viewBox="0 0 2880 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 28H0v28h2880V28h-720S1874 0 1440 0 720 28 720 28z" fill="currentColor"/></svg>
-      </div>
-    </div>
-
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="d-none position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-      </div>
-    </div>
-
-    <!-- REVIEWS
-    ================================================== -->
-    <section class="pt-7 pt-md-10 pb-4 bg-cooby-light-gray">
+    <section class="pt-12 pt-md-13 pb-8 pb-md-14">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Left -->
           <div class="col-12 col-md">
+
             <!-- Heading -->
-            <h3 class="mb-0"> Latest Reviews </h3>
+            <h1 class="display-4 mb-2">
+              Privacy Notice for WhatsApp Tabs by Cooby
+            </h1>
+
             <!-- Text -->
-            <p class="mb-0 text-muted"> Reviews received from Chrome web store recently! </p>
-          </div>
-          <!-- Right -->
-          <div class="col-12 col-md-auto">
-            <a href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline" target="blank"> View more </a>
-          </div>
-        </div>
-      </div>
+            <p class="font-size-lg text-gray-700 mb-md-0">
+              Last updated on July 14th, 2021
+            </p>
 
-      <!-- cards -->
-      <div class="container-fluid">
-        <div class="row flex-nowrap py-8 px-4 px-md-7 px-lg-10" id="review_cards_container">
+          </div>
+        </div> <!-- / .row -->
+        <div class="row my-10">
+          <div class="col-12">
+            <!-- Image -->
+            <img class="img-responsive img-fluid top-image" src="../assets/img/privacy/privacy-build_at_heart.png">
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-12">
 
-          <!-- card structure-->
-          <!-- <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 d-flex">
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-              <a class="card-body">
-                <div class="d-flex mb-4 align-items-center">
-                  <div class="avatar avatar-lg me-2 mr-3">
-                    <img src="https://www.gstatic.com/s2/contacts/images/NoPicture.gif" alt="..." class="avatar-img rounded-circle">
-                  </div>
-                  <h6 class="text-uppercase text-muted me-2 mb-0">Anandamoy Roychowdhary</h6>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-800">
+              Thank you for choosing to be part of our community at Cooby, Inc ("Company", "we", "us", "our"). We are committed to protecting your personal information and your right to privacy.
+            </p>
+
+            <p class="font-size-lg text-gray-800">
+              When you use our Chrome extension, WhatsApp Tabs by Cooby (the "Extension"), we appreciate that you are trusting us with your personal information.
+              We take your privacy very seriously. 
+            </p>
+
+            <!-- WE PROMISE -->
+            <div class="container mt-6 mb-6">
+              <div class="row mb-7 justify-content-center">
+                <img class="col-8 col-md-4" src="../assets/img/privacy/privacy-promise_text.svg" alt="">
+              </div>
+              <div class="row">
+
+                <div class="col-12 col-md-4">
+                  <img class="w-100 mx-0 mb-4" src="../assets/img/privacy/privacy-promise_0.svg">
+                  <p class="text-center">
+                    We <strong class="text-primary" style="font-weight: 900;">DON’T</strong> collect your WhatsApp personal data such as <strong class="text-primary" style="font-weight: 900;">messages</strong> or <strong class="text-primary" style="font-weight: 900;">contacts</strong>.
+                  </p>
                 </div>
-                <hr class="card-meta-divider">
-                <p class="mb-0 text-muted"> This is exactly what i wanted but the mobile app was lacking these useful features .Really Hats Off to you and thank you for making this extension for chat separator. </p>
-              </a>
-              <div class="card-meta mt-auto">
-                <div class="col-12 d-flex justify-content-end"> &#11088 &#11088 &#11088 &#11088 &#11088 </div>
+
+                <div class="col-12 col-md-4">
+                  <img class="w-100 mx-0 mb-4" src="../assets/img/privacy/privacy-promise_1.svg">
+                  <p class="text-center">
+                    We <strong class="text-primary" style="font-weight: 900;">ANONYMIZE</strong> user activity tracking and we don't track your WhatsApp activities.
+                  </p>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                  <img class="w-100 mx-0 mb-4" src="../assets/img/privacy/privacy-promise_2.svg">
+                  <p class="text-center">
+                    We will <strong class="text-primary" style="font-weight: 900;">NEVER</strong> <span class="text-primary">share or sell</span> your data in any shape or form.
+                  </p>
+                </div>
+
               </div>
             </div>
-          </div> -->
 
-      </div>
+            <p class="font-size-lg text-gray-800">
+              We know the Extension touches the most personal part of our lives - our messaging inbox, so we design and build it with privacy at heart.
+              We don't like hard-to-read 10,000-word privacy notices either. So, we write what we do with your data and how we protect your privacy ourselves. We make our best effort to disclose everything about data and privacy for the Extension.
+              We hope you take some time to read through it carefully, as it is important!<br><br>
+              This privacy notice applies to only the information collected through our Extension.<br><br>
+              If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at support@cooby.co.<br><br>
+            </p>
+
+            <h3 class="mb-5">
+              1. WHAT INFORMATION DO WE COLLECT?
+            </h3>
+
+            <div class="mb-6">
+              <img class="w-100" src="../assets/img/privacy/privacy-not_track.png">
+              <p class="d-block text-center">We <strong class="text-primary" style="font-weight: 900;">DON’T</strong> collect <span class="text-primary">WhatsApp IDs, numbers, messages</span> or <span class="text-primary">chats</span>.</p>
+            </div>
+
+            <p class="text-gray-800">
+              We do not collect your WhatsApp chat data including any messages and contacts. None of your chat data leaves your computer. Technically speaking, in fact, currently the Extension does not even connect to a Cooby server. It's 100% client-side.
+            </p>
+
+            <div class="my-6">
+              <img class="w-100" src="../assets/img/privacy/privacy-track_interactions.png">
+              <p class="d-block text-center">
+                We <strong class="text-primary" style="font-weight: 900;">DON’T</strong> know <span class="text-primary">which chats you add to any tabs</span>.<br>
+                We only collect minium data to improve our service.
+              </p>
+            </div>
+
+            <p class="text-gray-800">
+              We use product analytics software such as Amplitude to track your user activities on Extension-related UI elements, i.e. the header. That includes all operations on tabs such as clicks or re-ordering. The software also tracks browser and request metadata such as countries, states, and device info (Yes, we know if it's a Windows or Mac). However, we anonymize user-generated content when sending data back to product analytics software.<br><br>
+              We do not track your activities on native WhatsApp Web elements, e.g. clicks on a chat or typing out messages.<br><br>
+              When we send data back to product analytics software, we create a hash string that represents you as a user uniquely. There is no way to derive any personal identifiable information, such as your WhatsApp ID or number, from the hash. It's fully anonymized.
+            </p>
+
+            <div class="my-6">
+              <img class="w-100" src="../assets/img/privacy/privacy-share.png">
+              <p class="d-block text-center">
+                We <strong class="text-primary" style="font-weight: 900;">DON’T</strong> know your <span class="text-primary">emails</span> or <span class="text-primary">phone numbers</span>,<br>
+                unless you explicitly give them to us.
+              </p>
+            </div>
+
+            <p class="text-gray-800">
+              We run anonymous surveys to understand how you like our service and how we can improve it. These surveys aren't associated with your personal information, unless we explicitly ask you to fill in contact info such as emails or phone numbers, so we can follow up with your feedback, given your consent.<br><br>
+              Your tab settings are currently stored in your Chrome profile storage, associated with the Google account logged in the browser. It does not reside in our servers.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              2. HOW DO WE USE YOUR INFORMATION?
+            </h3>
+            <p class="text-gray-800">
+              We use the anonymized user activity data collected via product analytics software as well as survey responses to understand how you use our Extension and improve our service.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+            </h3>
+            <p class="text-gray-800">
+              NO. We will never share or sell your data in any shape or form. Period. It's only used to improve the product internally.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+            </h3>
+            <p class="text-gray-800">
+              As mentioned above, we use product analytics software that only tracks your usage of *our features* i.e. the tabs plus the Cooby logo menu. The tracking is anonymized, meaning that we cannot trace collected activities back to a real human.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              5. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?
+            </h3>
+            <p class="text-gray-800">
+              Likely yes. While we currently do not host our own servers to store any of your data for the Extension, the product analytics software we use have servers around the world. Therefore, the anonymized user activities are likely transferred internationally.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              6. HOW LONG DO WE KEEP YOUR INFORMATION?
+            </h3>
+            <p class="text-gray-800">
+              We plan to keep the anonymized user activities as long as needed in order to continue improving our service.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              7. WHAT ARE YOUR PRIVACY RIGHTS?
+            </h3>
+            <p class="text-gray-800">
+              You have the rights to access and control over your information. You can certainly uninstall the Extension at any time. If you have any questions about your rights, contact us at support@cooby.co, or at +1 (707) 563-1611 on WhatsApp.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              8. DO WE MAKE UPDATES TO THIS NOTICE?
+            </h3>
+            <p class="text-gray-800">
+              Yes we will. We'll update you when we update the notice, so you can decide to accept it or not.
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              9. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+            </h3>
+            <p class="text-gray-800">
+              You may contact us by<br>
+              1. emailing support@cooby.co<br>
+              2. send messages to +1 (707) 563-1611 on WhatsApp<br>
+              3. post to:<br>
+                &nbsp;&nbsp;Cooby, Inc<br>
+                &nbsp;&nbsp;548 Market St PMB 16954<br>
+                &nbsp;&nbsp;San Francisco, CA 94104<br>
+                &nbsp;&nbsp;United States<br>
+
+            </p>
+
+            <h3 class="mt-6 mb-3">
+              10. HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?
+            </h3>
+
+            <p class="text-gray-800">
+              To request to review, update, or delete your personal information, please email: support@cooby.co.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
     </section>
 
     <!-- FOOTER
@@ -673,108 +703,53 @@
           <div class="col-12 col-md-4 col-lg-4">
 
             <!-- Brand -->
-            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+            <img src="../assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
 
             <!-- Text -->
             <p class="text-primary mb-2">
-              Build Stronger <br>Sales Relationships
+              Bring your customer communication<br>
+              to order on WhatsApp
             </p>
 
             <!-- Social -->
             <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
                 <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')" target="_blank">
-                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                  <img src="../assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                 </a>
               </li>
               <li class="list-inline-item list-social-item mr-3">
                 <a href="https://twitter.com/JoinCooby" class="text-decoration-none" onclick="gaTracking('visit_twitter', 'click', 'clickTwitterBtn')" target="_blank">
-                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                  <img src="../assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="https://www.facebook.com/groups/coobians/" class="text-decoration-none" onclick="gaTracking('visit_facebook_group', 'click', 'clickFacebookGroupBtn')" target="_blank">
+                  <img src="../assets/img/icons/social/community.svg" class="list-social-icon" alt="...">
                 </a>
               </li>
             </ul>
 
           </div>
 
-          <div class="col-6 col-md-4 col-lg-2">
-
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-primary">
-              Product
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="./" class="text-reset">
-                  Overview
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="./features.html" class="text-reset">
-                  Features
-                </a>
-              </li>
-            </ul>
+          <div class="col-12 col-md-2 col-lg-1">
+            <a class="text-reset" href="/extension/pricing.html">
+              Pricing
+            </a>
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0 d-none">
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-primary">
-              Legal
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="./terms.html" class="text-reset">
-                  User Terms of Service
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="./privacy.html" class="text-reset">
-                  Privacy Policy
-                </a>
-              </li>
-            </ul>
+          <div class="col-12 col-md-2 col-lg-1">
+            <a class="text-reset" href="/extension/support.html">
+              Support
+            </a>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-2">
-
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-primary">
-              Company
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="./careers.html" class="text-reset">
-                  Careers
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="mailto:support@cooby.co" class="text-reset">
-                  Email Us
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
-                  Line Us
-                </a>
-              </li>
-            </ul>
+          <div class="col-12 col-md-2 col-lg-1">
+            <a class="text-reset" href="/extension/privacy.html">
+              Privacy
+            </a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2 d-none">
-                <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
-                  <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
-                </a>
-
-                <a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
-                  <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
-                </a>
-
-          </div>
+      
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </footer>
@@ -783,30 +758,30 @@
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/aos/dist/aos.js"></script>
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="./assets/libs/quill/dist/quill.min.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../assets/libs/aos/dist/aos.js"></script>
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="../assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="../assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="../assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="../assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="../assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="../assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="../assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="../assets/libs/typed.js/lib/typed.min.js"></script>
 
     <!-- Map -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
-    <script src="./assets/js/theme.min.js"></script>
+    <script src="../assets/js/theme.min.js"></script>
 
 
     <!-- External Lib -->
@@ -831,14 +806,13 @@
     <!-- End of ChatBot code -->
 
 
+
   </body>
   <style>
-     /* for Chrome */
-     #review_cards_container {
-       overflow-x: scroll;
-     }
-     #review_cards_container::-webkit-scrollbar {
-      display: none;
-    }
+    @media (max-width: 768px) {
+      .top-image {
+        transform: scale(1.3);
+      }
+    } 
   </style>
 </html>

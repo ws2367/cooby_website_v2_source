@@ -121,19 +121,63 @@
 
     <!-- CONTENTS
     ================================================== -->
-    <section class="mb-8">
+    <section class="mb-10 mb-md-12">
       <div class="container">
         
         <div class="row my-4">
-          <div class="col-12 order-2 col-md-6 order-md-1"></div>
-          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center mb-4">
+          <div class="col-12 order-2 col-md-6 order-md-1 d-flex align-items-center">
             <div>
-              <h2 class="font-weight-bold">Request a feature</h2>
-              <p class="mb-6">
+              <img class="img-fluid" src="/assets/img/extension/extension-support_0.svg" alt="">
+            </div> 
+          </div>
+          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center mb-4">
+            <div class="w-100">
+              <h1 class="font-weight-bold text-center text-md-left">Request a feature</h1>
+              <p class="mb-6 text-center text-md-left">
                 Have an idea for a new feature you wish to see included in an upcoming WhatsApp Tabs update? Visit our roadmap and feature request page on Canny.
               </p>
-              <a class="btn btn-primary-soft lift" href="https://feedback.cooby.co">
+              <a target="_blank" class="support-btn-group btn btn-primary-soft lift" href="https://feedback.cooby.co">
                 See Roadmap
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4 mt-10 mt-md-11">
+          <div class="col-12 order-2 col-md-6 order-md-1 d-flex align-items-center">
+            <div>
+              <img class="img-fluid" src="/assets/img/extension/extension-support_1.svg" alt="">
+            </div> 
+          </div>
+          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center mb-4">
+            <div class="w-100">
+              <h1 class="font-weight-bold text-center text-md-left">Recent Updates</h1>
+              <p class="mb-6 text-center text-md-left">
+                We’re constantly improving WhatsApp Tabs.<br>
+                See the latest features and improvements.
+              </p>
+              <a target="_blank" class="support-btn-group btn btn-primary-soft lift" href="https://changelog.cooby.co">
+                View Recent Updates
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4 mt-10 mt-md-11">
+          <div class="col-12 order-2 col-md-6 order-md-1 d-flex align-items-center">
+            <div>
+              <img class="img-fluid" src="/assets/img/extension/extension-support_2.svg" alt="">
+            </div> 
+          </div>
+          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center mb-4">
+            <div class="w-100">
+              <h1 class="font-weight-bold text-center text-md-left">Follow Cooby</h1>
+              <p class="mb-6 text-center text-md-left">
+                Be updated on the latest news about WhatsApp Tabs.<br>
+                Follow us on Twitter!
+              </p>
+              <a target="_blank" class="support-btn-group btn btn-primary-soft lift" href="https://twitter.com/JoinCooby">
+                Follow
               </a>
             </div>
           </div>
@@ -152,4 +196,19 @@
     @@include("../partials/scripts.html")
 
   </body>
+  <style>
+    .support-btn-group {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      .support-btn-group {
+        width: 80%;
+      }
+    }
+    @media (min-width: 992px) {
+      .support-btn-group {
+        width: 60%;
+      }
+    }
+  </style>
 </html>

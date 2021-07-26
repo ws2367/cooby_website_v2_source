@@ -47,7 +47,7 @@
                   <!-- <a class="btn btn-outline btn-secondary-soft mb-6 disabled">Coming Soon &nbsp;<span class="font-weight-light">just a little more time </span></a> -->
                   <a target="_blank"
                       class="d-block btn btn-primary lift mb-6"
-                      onclick="gaTracking('install_extension', 'click', 'AddToChromeBtn')"
+                      onclick="gaTracking('install_extension', 'click', 'IndexAddToChromeBtn')"
                       href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0">
                       Add to Chrome
                   </a>
@@ -182,8 +182,11 @@
               <p class="mb-6 mb-md-8">
                 Your privacy is of paramount importance to us. We will NEVER sell your data or keep it hostage. We do not store your conversation data by default. Think of WhatsApp Tabs as a UI layer on top of WhatsApp.
               </p>
-              <a class="btn btn-primary lift mb-6"
-                href="/extension/privacy.html">
+              <a 
+                class="btn btn-primary lift mb-6"
+                href="/extension/privacy.html"
+                onclick="gaTracking('read_privacy_notice', 'click', 'IndexReadMoreBtn')"
+              >
                 Read More
               </a>
             </div>
@@ -242,14 +245,20 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="row col-12 col-md-10 col-lg-7 d-flex flex-column flex-md-row justify-content-between">
-            <a target="_blank"
+            <a 
+              target="_blank"
               class="col-12 order-2 col-md-5 order-md-1 btn btn-primary-soft lift mb-6"
-              href="https://feedback.cooby.co">
+              href="https://feedback.cooby.co"
+              onclick="gaTracking('visit_roadmap', 'click', 'IndexSeeRoadMapBtn')"
+            >
               See Roadmap
             </a>
-            <a target="_blank" 
+            <a
+              target="_blank" 
               class="col-12 order-1 col-md-5 order-md-2 btn btn-primary lift mb-6"
-              href="https://changelog.cooby.co">
+              href="https://changelog.cooby.co"
+              onclick="gaTracking('visit_changelog', 'click', 'IndexVisitRecentUpdatesBtn')"
+            >
               View Recent Updates
             </a>
           </div>

@@ -23,12 +23,12 @@
             <div>
               <!-- Preheading -->
               <h1 class="font-weight-bold">
-                Only US$12/month to ELEVATE your customer communication on WhatsApp
+                Only US$3.99/month to ELEVATE your customer communication on WhatsApp
               </h1>
             </div>
             <div id="try-btn-and-aux-text" class="table-container">
               <p class="font-size-lg text-muted mb-7">
-                Only US$12/month—a few cups of coffee for a whole new way of managing your customer communication on WhatsApp. Faster. No setup required. Not another CRM.<br><br>
+                Only <span class="text-delete text-gray-400">$6.99</span> <span class="text-primary">$3.99/month (43% OFF) now</span>—a few cups of coffee for a whole new way of managing your customer communication on WhatsApp. Faster. No setup required. Not another CRM. <br><br>
                 Start with a 14-day free trial. No credit card and signup required.
               </p>
               <section class="d-flex flex-column align-items-start">
@@ -37,7 +37,7 @@
                   <!-- <a class="btn btn-outline btn-secondary-soft mb-6 disabled">Coming Soon &nbsp;<span class="font-weight-light">just a little more time </span></a> -->
                   <a target="_blank"
                     class="d-block btn btn-primary lift mb-6"
-                    onclick="gaTracking('install_extension', 'click', 'AddToChromeBtn')"
+                    onclick="gaTracking('install_extension', 'click', 'PricingAddToChromeBtn')"
                     href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0">
                     Add to Chrome
                   </a>
@@ -93,7 +93,11 @@
                 <p class="text-muted mb-6 mb-md-8">
                   No. At this point, WhatsApp Tabs can only be subscribed on a month-to-month basis.<br><br>
                   Looking for an annual subscription discount?
-                  <a class="text-green" href="mailto:support@cooby.co">
+                  <a
+                    target="_blank"
+                    class="text-green"
+                    href="https://wa.me/17075631611?text=I%20have%20a%20question%20about%20annual%20plan."
+                  >
                     Talk to us
                   </a>
                 </p>
@@ -219,7 +223,11 @@
                 <p class="text-muted mb-6 mb-md-8">
                   Subscriptions are payable by major debit card, credit card (MasterCard, Visa, or American Express or digital wallet.<br><br>
 	                Your preferred payment option is not listed here?
-                  <a class="text-green" href="mailto:support@cooby.co">
+                  <a
+                    target="_blank"
+                    class="text-green"
+                    href="https://wa.me/17075631611?text=I%20want%20to%20ask%20about%20an%20unsupported%20payment%20method."
+                  >
                     Talk to us
                   </a>
                 </p>
@@ -245,7 +253,13 @@
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
                   If you’re a student, work at a non-profit, or are struggling to make ends meet, please
-                  <a target="_blank" class="text-green" href="https://wa.me/17075631611">send us your story on WhatsApp</a>
+                  <a
+                    target="_blank"
+                    class="text-green"
+                    href="https://wa.me/17075631611?text=I%20have%20a%20story%20share"
+                  >
+                    send us your story on WhatsApp
+                  </a>
                   and we will sponsor your membership.
                 </p>
 
@@ -283,7 +297,11 @@
             <!-- Text -->
             <p class="text-muted">
               Have more questions?
-              <a class="text-green" href="mailto:support@cooby.co">
+              <a
+                target="_blank"
+                class="text-green"
+                href="https://wa.me/17075631611"
+              >
                 Talk to us
               </a>
             </p>
@@ -304,4 +322,9 @@
     @@include("../partials/scripts.html")
 
   </body>
+  <style>
+    .text-delete {
+      text-decoration: line-through;
+    }
+  </style>
 </html>

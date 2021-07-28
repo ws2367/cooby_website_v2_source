@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", { "pageTitle": "Cooby | Build Stronger Sales Relationships" })
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body class="bg-light">
+    <script>
+      const searchParams = getSearchParams();
+      const { isStaging, sessionId } = searchParams;
+
+      if (!sessionId) {
+        redirectToExtensionPage();
+      }
+
+      const STRIPE_API_KEY = isStaging
+        ? 'pk_live_51HcmGeIAMFPVZbTR8KBQsMV833FPMDPrbIH6ezWZhFZF0Q686mn1hvlYd0xcmm8tgRS7Dgz4nQVvs351wNDirrW000Qf3hlQ2g'
+        : 'pk_test_51HcmGeIAMFPVZbTRE1RMt7yYI9rWB2BJ2FqbPH8zfRl5gSAalR4m595IHBRI0w3EoXFkz9PhrMBipBjw0uwvPDRQ00QdZrSxzH';
+
+      const stripe = Stripe(STRIPE_API_KEY);
+      stripe.redirectToCheckout({ sessionId }).then((result) => {
+        if (result.error) {
+          console.error(result.error.message);
+          redirectToExtensionPage();
+        }
+      });
+
+      /* helper functions */
+      function getSearchParams() {
+        const searchParams = new URLSearchParams(window.location.search);
+        const data = {};
+        for (let [key, value] of searchParams.entries()) {
+          data[key] = value;
+        }
+        return data;
+      }
+
+      function redirectToExtensionPage() {
+        window.location.replace('https://cooby.co/extension/');
+      }
+    </script>
+  </body>
+</html>

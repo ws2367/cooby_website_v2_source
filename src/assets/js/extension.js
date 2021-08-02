@@ -1,8 +1,23 @@
 $(function() {
-  if (window.location.pathname !== '/extension/' && window.location.pathname !== '/extension.html' && window.location.pathname !== '/extension') {
+  var scope = window.location.pathname.split('/')[1]
+  if (scope !== 'extension') {
     return
   }
 
+  // warning alert
+  if (sessionStorage.getItem('isExtensionAlertClosed')) {
+    $( "#extension-alert" ).animate({ opacity: 0 }, 300)
+  } else {
+    $('#extension-alert').css({ 'opacity': 1 })
+  }
+  
+  $('#extension-alert button').on('click', function() {
+    if (sessionStorage.getItem('isExtensionAlertClosed')) return
+    $( "#extension-alert" ).animate({ opacity: 0 }, 300)
+    sessionStorage.setItem('isExtensionAlertClosed', true)
+  })
+
+  // fetch reviews
   console.log('ready to get json')
   $.getJSON(window.location.origin + '/reviews.json', function(json) {
     var container = $('#review_cards_container')

@@ -177,7 +177,7 @@
         redirectToExtensionPage();
       }
 
-      const STRIPE_API_KEY = isStaging
+      const STRIPE_API_KEY = checkIsStaging(isStaging)
         ? 'pk_test_51HcmGeIAMFPVZbTRE1RMt7yYI9rWB2BJ2FqbPH8zfRl5gSAalR4m595IHBRI0w3EoXFkz9PhrMBipBjw0uwvPDRQ00QdZrSxzH'
         : 'pk_live_51HcmGeIAMFPVZbTR8KBQsMV833FPMDPrbIH6ezWZhFZF0Q686mn1hvlYd0xcmm8tgRS7Dgz4nQVvs351wNDirrW000Qf3hlQ2g';
 
@@ -197,6 +197,10 @@
           data[key] = value;
         }
         return data;
+      }
+
+      function checkIsStaging(isStaging) {
+        return isStaging === 'true';
       }
 
       function redirectToExtensionPage() {

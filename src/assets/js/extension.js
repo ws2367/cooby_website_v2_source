@@ -1,4 +1,9 @@
 $(function() {
+  let scope = window.location.pathname.split('/')[1]
+  if (scope !== 'extension') {
+    return
+  }
+
   // warning alert
   if (sessionStorage.getItem('isExtensionAlertClosed')) {
     $( "#extension-alert" ).animate({ opacity: 0 }, 300)
@@ -13,10 +18,6 @@ $(function() {
   })
 
   // fetch reviews
-  if (window.location.pathname !== '/extension/' && window.location.pathname !== '/extension.html' && window.location.pathname !== '/extension') {
-    return
-  }
-
   console.log('ready to get json')
   $.getJSON(window.location.origin + '/reviews.json', function(json) {
     var container = $('#review_cards_container')

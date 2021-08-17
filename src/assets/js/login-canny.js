@@ -28,7 +28,7 @@ $(function() {
 
     var data = generateUserData(loginForm)
     var isLegalPassword = checkPassword(data, false)
-    if (!isLegalPassword) { 
+    if (!isLegalPassword) {
       setLoading(false, loginForm)
       return
     }
@@ -71,6 +71,9 @@ $(function() {
       contentType: 'application/json',
       crossDomain: true,
       data: JSON.stringify(data),
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader('Cooby-App-Platform', 'Canny')
+      },
       success: function(res) {
         console.log('success')
         showModalWithMsg(true, 'You created a Cooby account. Redirecting to our roadmap...')
@@ -164,7 +167,7 @@ $(function() {
     $('#popupModal #modalExampleTitle').text(isSuccess ? 'Success' : 'Error')
     $('#popupModal #popupMsg').text(msg)
   }
-  
+
   function getQueryParameterByName(name) {
     var pairStrings = window.location.search.slice(1).split('&');
     var pairs = pairStrings.map(function(pair) {

@@ -1,6 +1,6 @@
 $(function() {
   var scope = window.location.pathname.split('/')[1]
-  if (scope !== 'extension') {
+  if (scope !== '') {
     return
   }
 

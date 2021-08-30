@@ -21,781 +21,249 @@
     "classList": "navbar-light bg-white",
     "container": "container"
     })
-
-    <!-- WELCOME
-    ================================================== -->
-    <section class="position-relative pt-13 pt-md-13 pb-md-12 pb-6" id='welcome'>
-
-      <!-- Shape -->
-      <div class="d-none shape shape-fluid-x shape-blur-2 svg-shim text-light">
-        @@include("assets/img/shapes/blurs/blur-2.svg")
-      </div>
-      <!-- Content -->
-      <div class="container-xl">
-        <div class="row align-items-center text-center text-md-left">
-
-          <div class="col-12 col-md-6">
-            <!-- Macbook + iPhone -->
-            <div class="device-combo device-combo-macbook-iphonex mb-6 mb-md-0 w-100 w-md-100 w-lg-130" style="float: right!important">
-
-              <!-- Macbook -->
-              <div class="device device-macbook">
-                <img src="assets/img/screenshots/desktop/web_app.svg" class="device-screen">
-                <img src="assets/img/devices/macbook.svg" class="img-fluid">
-              </div>
-
-              <!-- iPhone -->
-              <div class="device device-iphonex">
-                <img src="assets/img/screenshots/mobile/ios_app.svg" class="device-screen">
-                <img src="assets/img/devices/iphonex.svg" class="img-fluid">
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 pt-md-10">
-
-            <!-- Heading -->
-            <h1 class="display-4 font-weight-bold">
-              <div data-aos="fade-left">Build Your Sales Engine</div>
-              <div data-aos="fade-left" data-aos-delay="100">Without a Spreadsheet</div>
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-6" data-aos="fade-left" data-aos-delay="200">
-              Keep in touch, segment clients, set auto reminders, and send personalized messages
-            </p>
-
-            <!-- Buttons -->
-            <div data-aos="fade-left" class="text-center text-md-left">
-              <a data-toggle="modal" href="#modalSignupHorizontal" class="btn btn-primary mr-1 lift mb-0 mb-md-3 mb-lg-0" onclick="gaTracking('sign_up', 'click', 'clickHeroBtn')">
-                Request Access <i class="fe fe-arrow-right ml-3"></i>
-              </a>
-              <!-- <a href="https://www.producthunt.com/posts/sales-crm-by-cooby?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-sales-crm-by-cooby" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=301307&theme=light" alt="Sales CRM by Cooby - Build mobile sales engines for WhatsApp without spreadsheets | Product Hunt" style="max-width: 250px; height: 54px;" width="250" height="54" /></a> -->
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row align-items-center text-center pt-6">
-          <div class="col-12">
-
-          </div>
-        </div>
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- Actionable Views
-    ================================================== -->
-    <section class="py-8 py-md-11 bg-cooby-light-gray">
-      <div class="container">
+  
+    <section class="pb-2 pt-12 bg-white">
+      <div class="container pt-md-4 pb-6">
         <div class="row justify-content-center">
-           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-primary font-weight-bold">
-              Supercharge your Rolodex
-            </h6>
 
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Organize Clients and Set Actions
-            </h1>
-            <p class="font-size-lg text-muted mb-7">
-              You need a <span class="text-primary">sales process</span>, but spreadsheets are too hard to use on mobile? <br><br>
-              Cooby helps you segment your clients into groups, set auto follow-ups create tasks, and send messages.
-            </p>
-          </div>
-        </div> <!-- / .row -->
-        <div class="row align-items-center" style="margin:0;">
-          <div class="col-12 col-md-6 col-lg-6 order-md-2">
-            <!-- Video -->
-            <div class="w-md-150 w-lg-150 mb-6 mb-md-0">
-              <div class="tab-content">
-                <div class="tab-pane active video-tab" id="keep-in-touch-video">
-                  <video playsinline autoplay muted loop
-                    src="assets/video/features/keep_in_touch_view.mp4"
-                    class="img-fluid mw-100 mb-6 mb-md-0"
-                    data-aos="fade-left"></video>
-                </div>
-                <div class="tab-pane  video-tab" id="client-score-video">
-                  <video playsinline autoplay muted loop id="view-video"
-                    src="assets/video/features/client_score_view.mp4"
-                    class="img-fluid mw-100 mb-6 mb-md-0"
-                    data-aos="fade-left"></video>
-                </div>
-                <div class="tab-pane video-tab" id="custom-video">
-                  <video playsinline autoplay muted loop
-                    src="assets/video/features/custom_view.mp4"
-                    class="img-fluid mw-100 mb-6 mb-md-0"
-                    data-aos="fade-left"></video>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-12 col-md-5 col-lg-6 order-md-1">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#keep-in-touch">Keep-In-Touch View</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#client-score">Client Score View</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#custom">Custom View</a>
-              </li>
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="keep-in-touch">
-                <!-- List -->
-                <div class="d-flex pt-6">
-                  <!-- Icon -->
-                  <div class="icon text-primary">
-                    @@include("assets/img/icons/duotone-icons/Home/Home-heart.svg")
-                  </div>
-
-                  <div class="ml-5">
-
-                    <!-- Heading -->
-                    <h4 class="mb-1">Loved By</h4>
-
-                    <!-- Text -->
-                    <p class="text-muted mb-5">
-                      Insurance Agents, Real Estate Agents, etc
-                    </p>
-
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <!-- Icon -->
-                  <div class="icon text-primary">
-                    @@include("assets/img/icons/duotone-icons/General/Clipboard.svg")
-                  </div>
-                  <div class="ml-5">
-                    <!-- Heading -->
-                    <h4 class="mb-1">Use Cases</h4>
-                    <!-- Text -->
-                    <p class="text-muted mb-0">
-                      Keep in touch with clients and leads. Set recurring reminders.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="client-score">
-                <!-- List -->
-                <div class="d-flex pt-6">
-                  <!-- Icon -->
-                  <div class="icon text-primary">
-                    @@include("assets/img/icons/duotone-icons/Home/Home-heart.svg")
-                  </div>
-
-                  <div class="ml-5">
-
-                    <!-- Heading -->
-                    <h4 class="mb-1">Loved By</h4>
-
-                    <!-- Text -->
-                    <p class="text-muted mb-5">
-                      Direct Sales, Art Brokers, etc
-                    </p>
-
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <!-- Icon -->
-                  <div class="icon text-primary">
-                    @@include("assets/img/icons/duotone-icons/General/Clipboard.svg")
-                  </div>
-                  <div class="ml-5">
-                    <!-- Heading -->
-                    <h4 class="mb-1">Use Cases</h4>
-                    <!-- Text -->
-                    <p class="text-muted mb-0">
-                      Organize clients based on their revenue potentials and deal probability. Set automated trackers.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-              <div class="tab-pane" id="custom">
-                <!-- List -->
-                <div class="d-flex pt-6">
-                  <!-- Icon -->
-                  <div class="icon text-primary">
-                    @@include("assets/img/icons/duotone-icons/Home/Home-heart.svg")
-                  </div>
-
-                  <div class="ml-5">
-
-                    <!-- Heading -->
-                    <h4 class="mb-1">Loved By</h4>
-
-                    <!-- Text -->
-                    <p class="text-muted mb-5">
-                      You and other sales professionals
-                    </p>
-
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <!-- Icon -->
-                  <div class="icon text-primary">
-                    @@include("assets/img/icons/duotone-icons/General/Clipboard.svg")
-                  </div>
-                  <div class="ml-5">
-                    <!-- Heading -->
-                    <h4 class="mb-1">Use Cases</h4>
-                    <!-- Text -->
-                    <p class="text-muted mb-0">
-                      Organize clients into groups however you like. Create tasks in bulk, send mesasges or set reminders.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-<!-- INSIGHT
-    ================================================== -->
-    <div id='cooby_insight'>
-    <section class="pt-md-8 pb-10">
-      <div class="container">
-        <div id='insight_bz_0' class="row justify-content-center">
-          <div class="col-12 col-md-6 pt-12" data-aos="fade-right">
-            <div id='insight_bz0_slogan'>
-              <h6 class="text-uppercase text-primary font-weight-bold">
-                better use of your time
-              </h6>
+          <div class="order-1 col-12 col-md-6 pt-4 pt-md-6" data-aos="fade-right">
+            <div>
+              <!-- Preheading -->
               <h1 class="font-weight-bold">
-                Optimize Your Time for the Right Clients
+                Bring Your Customer Communication to Order on WhatsApp
               </h1>
             </div>
             <div id="try-btn-and-aux-text" class="table-container">
               <p class="font-size-lg text-muted mb-7">
-                Messaging with clients is a great way to build relationships, but do you know how well your time is spent? <br><br>
-                Get your free report to understand who and how you spend time on WhatsApp. Learn who you keep in touch and lose touch with.
+                Lose track of your work chats in WhatsApp inbox? Try WhatsApp Tabs. Prioritize chats. Reduce clutter. Never miss a follow-up. 
               </p>
-              <section id='cooby-insight-btn-and-ps'
-                class="d-flex flex-column">
-                <div id='BZ0_entry_button' onclick="onBZ0EntryButtonClick()">
-                  <span
-                    class="btn btn-primary lift mb-3"
-                  >Get Your Free Report Now</span>
+              <section class="d-flex flex-column align-items-start">
+                <!-- CTA Button -->
+                <div>
+                  <!-- <a class="btn btn-outline btn-secondary-soft mb-6 disabled">Coming Soon &nbsp;<span class="font-weight-light">just a little more time </span></a> -->
+                  <a target="_blank"
+                      class="d-block btn btn-primary lift mb-6"
+                      onclick="gaTracking('install_extension', 'click', 'IndexAddToChromeBtn')"
+                      href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0">
+                      Add to Chrome
+                  </a>
                 </div>
-                <div id='BZ0_ps' style="color: #06BF9D; font-size: 12px;">
-                  *No signup required
-                </div>
+                <!-- BRANDS (for web)
+                ================================================== -->
+                @@include("partials/brands.html", {
+                "classList": "row justify-content-center d-none d-md-flex",
+                })
               </section>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <video playsinline autoplay muted
-              src="assets/video/features/Insights.mp4"
-              class="img-fluid mw-100 mb-6 mb-md-0"
+          
+          <div class="order-2 col-12 col-md-6 px-0" data-aos="fade-left">
+            <img class="mw-150" src="/assets/img/extension/extension-landing.png" alt="">
+          </div>
+
+          <!-- BRANDS (for mobile)
+          ================================================== -->
+          @@include("partials/brands.html", {
+          "classList": "order-3 row justify-content-center col-12 d-md-none",
+          })
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- REVIEWS
+    ================================================== -->
+    <section class="py-7 py-md-10 pb-4 bg-cooby-light-gray d-flex justify-content-center">
+      <div class="col-12 col-md-6">
+        <div class="mb-2">
+          <img src="/assets/img/brands/Logo_HustleFund.png" style="width: 132px;">
+        </div>
+        <p class="d-block mb-2 quote-paragraph">
+          "I've been searching for a solution to manage my out-of-control Whatsapp inbox. Cooby instantly brings order by allowing me to create lists of priority folks to respond to, and muting the group chats that can be incredibly distracting"
+        </p>
+        <div class="row align-items-center py-5 border-top border-bottom">
+          <div class="col-auto">
+            <!-- Avatar -->
+            <div class="avatar avatar-lg">
+              <img class="avatar-img rounded-circle article-meta-avatar" src="/assets/img/avatars/shiyan.png">
+            </div>
+          </div>
+          <div class="col ml-n5">
+            <!-- Name -->
+            <h6 class="text-uppercase mb-0 article-author">Shiyan Koh</h6>
+            <!-- Date -->
+            <div class="font-size-xs text-gray">Managing Partner at Hustle Fund</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES
+    ================================================== -->
+    <section class="pt-6 pb-4 py-md-10 bg-white">
+      <div class="container">
+
+        <div class="row mb-8 mb-md-6 mb-lg-4">
+          <div class="col-12 order-2 col-md-6 order-md-1">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_0.png" alt="">
+          </div>
+          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center">
+            <div>
+              <h2 class="font-weight-bold">Your WhatsApp Inbox Is Going Out of Control</h2>
+              <p>
+                Customers, colleagues, vendors, plus friends and family all clutter your WhatsApp inbox. You need to keep things in order on WhatsApp as you scale your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row mb-8 mb-md-6 mb-lg-4">
+          <div class="col-12 order-2 col-md-6 order-md-2">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_1.png" alt="">
+          </div>
+          <div class="col-12 order-1 col-md-6 order-md-1 d-flex align-items-center">
+            <div>
+              <h2 class="font-weight-bold">A Better and Faster Way to Manage Customers Than a CRM</h2>
+              <p>
+                CRM busywork slows you down. It forces you to spend more time entering data into another system.<br><br>
+                Unlike a CRM, WhatsApp Tabs is built for speed. Zero setup time. Build your own communication workflows in 30 seconds.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 order-2 col-md-6 order-md-1">
+            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_2.png" alt="">
+          </div>
+          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center">
+            <div>
+              <h2 class="font-weight-bold">Supercharge Your WhatsApp for Work</h2>
+              <p>
+                WhatsApp is built for personal use. Yet, your business relies on it. Mute, Pin, etc aren't enough for you.<br><br>
+                We combine everything from tabs, search, and sales processes in one simple and intuitive workspace—right within WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- TAKE CONTROL
+    ================================================== -->
+    <section class="pt-7 pt-md-10 bg-cooby-light-gray">
+      <div class="container d-flex flex-column text-center justify-content-center">
+        <h2 class="font-weight-bold">Take Control of Your WhatsApp Chats</h2>
+        <p class="px-4 px-md-8 px-lg-10">
+          It's easy to lose track of conversations. Use Unread, Awaiting Reply, Needs Reply tabs to find a chat thread much faster and never miss a message again!
+        </p>
+        <div>
+          <video playsinline autoplay muted
+              src="/assets/video/features/extension_features.mp4"
+              class="img-fluid float-end mb-0 mt-2 mt-md-4"
               data-aos="fade-left"></video>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-      <div id='BZ0_popup_if_mobile'>
-        <div id='BZ0_popup_main_content'>
-          <div class='title'>Find another device to display QR Code</div>
-          <div class='explain'>You need to scan QR Code with your phone, so please
-            <a class='url-green' target="_blank" href='https://wa.me/17075631611?text=Click%20through%20the%20%22Get%20Your%20Free%20Report%20Now%22%20button%20on%20cooby.co%2Finsights%20to%20scan%20the%20QR%20Code' onClick="logSendUsLink()">send the link to either us</a>
-              or <a class='url-green' target="_blank" href='https://wa.me/?text=Click%20through%20the%20%22Get%20Your%20Free%20Report%20Now%22%20button%20on%20cooby.co%2Finsights%20to%20scan%20the%20QR%20Code' onClick="logSendFriendLink()">your friend nearby</a> via WhatsApp and open the link on another device.</div>
-            <div class='explain'>Tap "Got it" below to proceed to QR Code.
-            </div>
-          <div class='explain-img'><img src="@@webRoot/assets/img/illustrations/BZ0IfMobileTutorial.svg"/></div>
-          <div class='got-it-button btn btn-primary lift mb-3' onClick="closeBZ0Popup()">Got it</div>
+          <!-- <img class="img-fluid img-responsive" src="/assets/img/extension/extension-take_control.png"> -->
         </div>
       </div>
-      <a id='insight_flow_a' href='https://web.cooby.co/en/insight'></a>
     </section>
-    </div>
 
-    <!-- Suggestions
-    ================================================== -->
-    <section class="py-8 py-md-8 bg-cooby-light-gray">
+    <section class="py-8 py-md-12 bg-white">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-
-          <div class="col-12 col-md-6 col-lg-7 order-md-1">
-            <div class="w-100 w-md-75">
-              <!-- Video -->
-              <video playsinline autoplay muted loop src="assets/video/features/suggestions.mp4" class="img-fluid mb-6 mb-md-4" data-aos="fade-right"></video>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-2" data-aos="fade-left">
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-primary font-weight-bold">
-              Keep your leads warm
-            </h6>
-            <!-- Heading -->
-            <h2 class="font-weight-bold">
-              Never Lose Touch Again
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-0">
-              Stronger relationships mean keeping in touch with your clients and staying top of mind. <br><br>
-              Cooby provides you daily suggestions on contacts that you should reconnect.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- Remember What Client Said
-    ================================================== -->
-    <section id="product" class='px-2 pb-8 pb-md-6'>
-      <div class="container pb-8">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-12 col-md-6 col-lg-5 order-md-2">
-
-            <!-- Image grid -->
-            <div class="d-flex flex-column w-md-130 mb-6 mb-md-0">
-
-              <!-- Image -->
-              <img class="img-fluid align-self-start" data-jarallax-element="-20" src="assets/img/screenshots/ui/gmail.svg" style="min-height: 1px; max-width: 70%; margin-left: 45%;">
-
-              <video playsinline autoplay muted loop src="assets/video/features/Tasks.mp4" class="img-fluid align-self-start shadow-light" data-jarallax-element="-50" width="320" height="240" style="min-height: 1px; max-width: 70%; margin-top: -25%;" ></video>
-
-              <!-- Image -->
-              <img class=" img-fluid  align-self-center" data-jarallax-element="-80" src="assets/img/screenshots/ui/activities.svg" style="min-height: 1px; max-width: 70%; margin-top: -24%; margin-left: 40%;">
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 order-md-1 pt-md-8">
-
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Remember <br>What Clients Said
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-6">
-              Show your clients that you care by remembering the details. However, you can't possibly remember everything. <br><br>
-              Use Cooby to take notes, create tasks, sync emails, etc
-            </p>
-
-            <!-- List -->
-            <div class="row">
-              <div class="col-12 col-lg-6">
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <p>
-                    Sync Client Emails
-                  </p>
-
-                </div>
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <p>
-                    Quick Notes
-                  </p>
-
-                </div>
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Trackable Tasks
-                  </p>
-
-                </div>
-
-              </div>
-              <div class="col-12 col-lg-6">
-
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Lightning Fast Search
-                  </p>
-
-                </div>
-
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    File Attachments
-                  </p>
-
-                </div>
-
-              </div>
-            </div> <!-- / .row -->
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-   <!-- TARGET AUDIENCE
-    ================================================== -->
-    <section class="py-8 py-md-11 bg-cooby-light-gray">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7 text-center">
-
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-primary font-weight-bold">
-              Personal Sales CRM
-            </h6>
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Built to Empower Modern-Day Sales Professionals
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
-              Each customer is different.<br>Cooby lets you cater to their unique needs.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="form-row">
-          <div class="col-12 col-lg-6 d-lg-flex pb-1 mb-4">
-
-            <!-- Card -->
-            <div class="card shadow-light-lg overflow-hidden" data-aos="fade-up">
-              <div class="row">
-                <div class="col-md-4 position-relative">
-
-                  <!-- Image -->
-                  <img src="assets/img/illustrations/profeesional_services.jpg" class="h-75 position-absolute right-0 mt-7 mr-n4">
-
-                </div>
-                <div class="col-md-8">
-
-                  <!-- Body -->
-                  <div class="card-body py-7 py-md-9 text-center">
-
-                    <!-- Heading -->
-                    <h3 class="font-weight-bold">
-                      High-Ticket Sales
-                    </h3>
-
-                    <!-- Text -->
-                    <p class="text-muted mb-0">
-                      Real estate agents, luxury goods brokers, and art brokers rely on Cooby to impress customers.
-                    </p>
-
-                  </div>
-
-                </div>
-              </div> <!-- / .row -->
-            </div>
-
-          </div>
-          <div class="col-12 col-lg-6 d-lg-flex pb-1 mb-4">
-
-            <!-- Card -->
-            <div class="card shadow-light-lg overflow-hidden text-center" data-aos="fade-up">
-              <div class="row">
-                <div class="col-md-8">
-
-                  <!-- Body -->
-                  <div class="card-body py-7 py-md-9">
-
-                    <!-- Heading -->
-                    <h3 class="font-weight-bold">
-                      Direct Sales
-                    </h3>
-
-                    <!-- Text -->
-                    <p class="text-muted mb-0">
-                      Direct sales use Cooby to build stronger relationships with customers.
-                    </p>
-
-                  </div>
-
-                </div>
-                <div class="col-md-4">
-
-                  <!-- Image -->
-                  <img src="assets/img/illustrations/agencies_and_consultancies.jpg" class="h-75 position-absolute left-0 mt-7">
-
-                </div>
-              </div> <!-- / .row -->
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
         <div class="row">
-          <div class="col-12">
 
-            <!-- Card -->
-            <div class="card shadow-light-lg overflow-hidden text-center text-lg-left" data-aos="fade-up">
-              <div class="row">
-                <div class="col-md-4 position-relative">
-
-                  <!-- Image -->
-                  <img src="assets/img/illustrations/relationship_focused_sales.jpg" class="h-75 position-absolute right-0 mt-6">
-
-                </div>
-                <div class="col-md-8">
-
-                  <!-- Body -->
-                  <div class="card-body py-7 py-md-9">
-
-                    <!-- Heading -->
-                    <h3 class="font-weight-bold">
-                      Insurance Sales
-                    </h3>
-
-                    <!-- Text -->
-                    <p class="text-muted mb-0">
-                      Insurance agents use Cooby to strengthen their relationships with clients.
-                    </p>
-
-                  </div>
-
-                </div>
-              </div> <!-- / .row -->
+          <div class="col-12 col-md-5 d-flex align-items-center">
+            <div>
+              <h2 class="font-weight-bold">We Design and Build With Privacy at Heart</h2>
+              <p class="mb-6 mb-md-8">
+                Your privacy is of paramount importance to us. We will NEVER sell your data or keep it hostage. We do not store your conversation data by default. Think of WhatsApp Tabs as a UI layer on top of WhatsApp.
+              </p>
+              <a 
+                class="btn btn-primary lift mb-6"
+                href="/privacy.html"
+                onclick="gaTracking('read_privacy_notice', 'click', 'IndexReadMoreBtn')"
+              >
+                Read More
+              </a>
             </div>
-
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
-    <!-- SHAPE
-    ==================================================
-    <div class="position-relative">
-      <div class="shape shape-top shape-fluid-x svg-shim text-white">
-        @@include("assets/img/shapes/waves/wave-1.svg")
+          <div class="col-12 col-md-7 text-center d-flex align-items-center">
+            <div>
+              <img class="img-fluid img-responsive" src="/assets/img/extension/extension-privacy.png">
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- VIDEO >Will activate this section when we have video
-    ==================================================
-    <section class="py-12 py-md-13 bg-cover" style="background-image: url(assets/img/covers/cover-2.jpg);">
-      <div class="container py-md-13">
-        <div class="row">
-          <div class="col-12 text-center">
+    <!-- REVIEWS
+    ================================================== -->
+    <section class="pt-7 pt-md-10 pb-4 bg-cooby-light-gray">
+      <div class="container">
+        <div class="row flex-column justify-content-center align-items-center">
+          <h2 class="col-12 font-weight-bold text-center">Hear What Our Customers Say</h2>
+          <div class="col-12 col-md-8 text-center">
+            <p>
+              Over 90% of our customers are more than happy with WhatsApp Tabs. Hear what our customers say about our product in 
+              <a target="_blank" class="text-green" href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm">Chrome Store reviews</a>:
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <!-- Button
-            <a href="https://www.youtube.com/watch?v=9I-Y6VQ6tyI" class="btn btn-pill btn-white text-body shadow lift" data-fancybox>
-              <span class="h6 text-uppercase font-weight-bold"><i class="fe fe-play mr-2"></i> Watch video</span>
+      <!-- cards -->
+      <div class="container-fluid">
+        <div class="row flex-nowrap py-8 px-4 px-md-7 px-lg-10" id="review_cards_container">
+
+          <!-- card structure-->
+          <!-- <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 d-flex">
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <a class="card-body">
+                <div class="d-flex mb-4 align-items-center">
+                  <div class="avatar avatar-lg me-2 mr-3">
+                    <img src="https://www.gstatic.com/s2/contacts/images/NoPicture.gif" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                  <h6 class="text-uppercase text-muted me-2 mb-0">Anandamoy Roychowdhary</h6>
+                </div>
+                <hr class="card-meta-divider">
+                <p class="mb-0 text-muted"> This is exactly what i wanted but the mobile app was lacking these useful features .Really Hats Off to you and thank you for making this extension for chat separator. </p>
+              </a>
+              <div class="card-meta mt-auto">
+                <div class="col-12 d-flex justify-content-end"> &#11088 &#11088 &#11088 &#11088 &#11088 </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+            <a 
+              target="_blank"
+              class="roadmap-cta-btn btn btn-primary-soft lift mb-6"
+              href="https://feedback.cooby.co"
+              onclick="gaTracking('visit_roadmap', 'click', 'IndexSeeRoadMapBtn')"
+            >
+              See Roadmap
             </a>
-
-          </div>
-        </div> <!-- / .row
-      </div> <!-- / .container
-    </section>-->
-
-
-
-    <!-- INTEGRATIONS
-    ================================================== -->
-    <section class="d-none bg-dark py-8 py-md-13">
-      <div class="container ">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-warning">與你最常用的軟體整合</h6>
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold text-white">
-              從 Cooby 連結到所有軟體
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-9">
-              通訊、地圖、行事曆，輕鬆串接
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 text-center">
-
-            <!-- Icon -->
-            <div class="icon icon-lg mb-4">
-              <img style='height: 60px' src='assets/img/brands/logomark/line.png' class="img-fluid">
-            </div>
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white">
-              Line
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-8">
-              預設訊息、傳檔案
-            </p>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 text-center">
-
-            <!-- Icon -->
-            <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/google_map.svg")
-            </div>
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white">
-              Google 地圖
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-8 mb-lg-0">
-              順路拜訪、客戶地圖
-            </p>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 text-center">
-
-            <!-- Icon -->
-            <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/google_calendar.svg")
-            </div>
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white">
-              Google 行事曆
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-8 mb-md-0">
-              與你的行事曆同步
-            </p>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 text-center">
-
-            <!-- Icon -->
-            <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/contacts-ios.svg")
-            </div>
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white">
-              iPhone 通訊錄
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-8 mb-lg-0">
-              自動從通訊錄輸入客戶資料
-            </p>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 text-center">
-
-            <!-- Icon -->
-            <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/excel.svg")
-            </div>
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white">
-              Excel
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-8 mb-md-0">
-              從Excel自動匯入客戶資料
-            </p>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 text-center">
-
-            <!-- Icon -->
-            <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/atlassian.svg")
-            </div>
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white">
-              保單系統
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              與保單系統整合
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-<!-- NEWS
-    ================================================== -->
-    <section class="pb-10 pt-md-8">
-      <div class="container">
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-primary font-weight-bold text-center pb-3">
-              Our News
-            </h6>
-
-        <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
-
-          <!-- Brand -->
-          <div class="col-5 col-md-2 pt-3">
-
-            <a href="https://www.techinasia.com/exfacebook-execs-startup-raises-preseed-sequoias-surge" target="_blank"><div class="img-fluid">
-              <img src="assets/img/brands/tech-in-asia-logo-vector.png">
-            </div></a>
-          </div>
-          <!-- Brand -->
-          <div class="col-5 col-md-2 pt-2">
-
-           <a href="https://meet-global.bnext.com.tw/articles/view/47329" target="_blank">
-            <div class="img-fluid">
-              <img src="assets/img/brands/meet_global.png">
-            </div></a>
-          </div>
+            <span style="width: 36px;"></span>
+            <a
+              target="_blank" 
+              class="roadmap-cta-btn btn btn-primary lift mb-6"
+              href="https://changelog.cooby.co"
+              onclick="gaTracking('visit_changelog', 'click', 'IndexVisitRecentUpdatesBtn')"
+            >
+              View Recent Updates
+            </a>
         </div>
-      </div> <!-- / .container -->
+      </div>
     </section>
 
-<!-- BRANDS
+    <!-- BRANDS
     ================================================== -->
-    <section class="pb-8">
+    <section class="py-10">
       <div class="container">
             <!-- Preheading -->
             <h6 class="text-uppercase text-primary font-weight-bold text-center pb-3">
@@ -830,63 +298,43 @@
       </div> <!-- / .container -->
     </section>
 
-
-
-
-            <!-- SHAPE
-            ================================================== -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                @@include("assets/img/shapes/curves/curve-1.svg")
-              </div>
-            </div>
-
-    <!-- CTA
-    ================================================== -->
-    <section class="pt-6 pt-md-8 bg-cooby-light-gray" id="try">
-      <div class="container pb-6 pb-md-8 border-bottom-cooby">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-8">
-
-            <!-- Heading -->
-            <h2 class="font-weight-bold mb-1">
-              Hear What Our Customers Say
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-5 mb-md-0 pt-6">
-              "With Cooby, I can segment clients into simple classes such as A, B, C and D. Each class has different designated contact frequencies. I won't lose touch with a client any more!
-              <br>Simply put, Cooby saved me a lot of time and effort and increased clients' trust that led to more deals done!" <br><br>
-              - Chia-Wei, insurance agent, Taiwan Life Insurance Co.
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4 text-center">
-
-            <!-- Button -->
-            <a data-toggle="modal"
-               href="#modalSignupHorizontal"
-               class="btn btn-primary lift w-75"
-               onclick="gaTracking('sign_up', 'click', 'clickStartForFreeBtn')">
-              Request Access
-            </a>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-
-
     <!-- FOOTER
     ================================================== -->
     @@include("partials/footer.html")
-    <!--@@include("partials/footer.html", {
-    "classList": "bg-gray-200"
-    })-->
 
     <!-- JAVASCRIPT
     ================================================== -->
     @@include("partials/scripts.html")
   </body>
+  <style>
+    /* for Chrome */
+    #review_cards_container {
+      overflow-x: scroll;
+    }
+    #review_cards_container::-webkit-scrollbar {
+     display: none;
+   }
+
+   .quote-paragraph {
+     font-size: 1.2rem;
+   }
+   @media only screen and (max-width: 768px) {
+     .quote-paragraph {
+       font-size: 1rem;
+     }
+   }
+
+   .review-session-btn {
+     width: 260px;
+   }
+
+   .roadmap-cta-btn {
+     width: 220px;
+   }
+   @media only screen and (max-width: 768px) {
+     .roadmap-cta-btn {
+       width: 100%;
+     }
+   }
+ </style>
 </html>

@@ -91,25 +91,31 @@
         <div class="row align-items-center" style="margin:0;">
           <div class="col-12 col-md-6 col-lg-6 order-md-2">
             <!-- Video -->
-            <div class="w-md-150 w-lg-150 mb-6 mb-md-0">
+            <div class="mb-6 mb-md-0">
               <div class="tab-content">
                 <div class="tab-pane active video-tab" id="keep-in-touch-video">
-                  <video playsinline autoplay muted loop
-                    src="assets/video/features/keep_in_touch_view.mp4"
-                    class="img-fluid mw-100 mb-6 mb-md-0"
-                    data-aos="fade-left"></video>
+                  <div class="d-flex justify-content-center mw-100">
+                    <video playsinline autoplay muted loop
+                      src="assets/video/mobile-crm/keep_in_touch.mp4"
+                      class="img-fluid mw-60 mb-6 mb-md-0"
+                      data-aos="fade-left"></video>
+                  </div>
                 </div>
-                <div class="tab-pane  video-tab" id="client-score-video">
-                  <video playsinline autoplay muted loop id="view-video"
-                    src="assets/video/features/client_score_view.mp4"
-                    class="img-fluid mw-100 mb-6 mb-md-0"
-                    data-aos="fade-left"></video>
+                <div class="tab-pane video-tab" id="client-score-video">
+                  <div class="d-flex justify-content-center mw-100">
+                    <video playsinline autoplay muted loop id="view-video"
+                      src="assets/video/mobile-crm/custom_score.mp4"
+                      class="img-fluid mw-60 mb-6 mb-md-0"
+                      data-aos="fade-left"></video>
+                  </div>
                 </div>
                 <div class="tab-pane video-tab" id="custom-video">
-                  <video playsinline autoplay muted loop
-                    src="assets/video/features/custom_view.mp4"
-                    class="img-fluid mw-100 mb-6 mb-md-0"
-                    data-aos="fade-left"></video>
+                  <div class="d-flex justify-content-center mw-100">
+                    <video playsinline autoplay muted loop
+                      src="assets/video/mobile-crm/custom_view.mp4"
+                      class="img-fluid mw-60 mb-6 mb-md-0"
+                      data-aos="fade-left"></video>
+                  </div>
                 </div>
               </div>
 
@@ -601,6 +607,9 @@
     @@include("partials/scripts.html")
   </body>
   <style>
+    .mw-60 {
+      max-width: 60%;
+    }
     .brand-img-container {
       height: 80px;
     }

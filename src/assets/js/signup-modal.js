@@ -5,8 +5,14 @@ $('#signup_form').submit(function(e){
     inputData[this.name] = $(this).val().trim()
   })
   var outputData = new FormData()
+  var name
+  if (!inputData.firstName && !inputData.lastName) { // deal with zh-tw version form
+    name = inputData.name
+  } else {
+    name = inputData.firstName + ' ' + inputData.lastName
+  }
   outputData.append('application', 'mobile CRM')
-  outputData.append('name', inputData.firstName + ' ' + inputData.lastName)
+  outputData.append('name', name)
   outputData.append('company', inputData.company)
   outputData.append('email', inputData.email)
   outputData.append('title', inputData.title)

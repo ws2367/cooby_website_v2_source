@@ -145,7 +145,18 @@ h3{
 		padding-right: 1rem;
 		padding-left: 1rem;
 	}
-	.w-custom{
-	width:60%;
+
+	.w-custom {
+		width:60%;
+	}
+
+	#navbar-product-dropdown {
+		padding: 22px;
+		left: 115%;
+	}
+
+	#navbar-community-dropdown {
+		padding: 22px;
+		left: 78%
 	}
 }

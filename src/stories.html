@@ -37,8 +37,12 @@
               <section class="d-flex flex-column align-items-start">
                 <!-- CTA Button -->
                 <div>
-                  <!-- TODO: gaTracking -->
-                  <a href="https://www.facebook.com/groups/coobians/" class="btn btn-primary mr-1 lift mb-0 mb-md-3 mb-lg-0" target="_blank">
+                  <a 
+                    href="https://www.facebook.com/groups/coobians/"
+                    class="btn btn-primary mr-1 lift mb-0 mb-md-3 mb-lg-0"
+                    target="_blank"
+                    onclick="gaTracking('visit_facebook_group', 'click', 'StoriesJoinCommunityBtn')"
+                  >
                     Join Community
                   </a>
                 </div>
@@ -141,8 +145,7 @@
           <div class="col-12 col-md-5 text-center">
 
             <!-- Button -->
-            <!-- TODO: gaTracking -->
-            <a href="mailto:support@cooby.co" class="btn btn-primary lift w-75">
+            <a href="https://wa.me/17075631611?text=Hi!%20I%20have%20a%20story%20to%20share." class="btn btn-primary lift w-75" target="_blank">
               Share with us
             </a>
 

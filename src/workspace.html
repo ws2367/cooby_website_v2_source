@@ -5,14 +5,6 @@
       "pageTitle": "Cooby | Build Your Sales Engine Without a Spreadsheet"
     })
   </head>
-  <style>
-
-    @media screen and (max-width: 320px){
-      #insight_bz_0 {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
   <body class="font-eng">
 
     <!-- NAVBAR
@@ -43,8 +35,12 @@
               <section class="d-flex flex-column align-items-start">
                 <!-- CTA Button -->
                 <div>
-                  <!-- TODO: gaTracking -->
-                  <a data-toggle="modal" href="#modalSignupHorizontal" class="btn btn-primary mr-1 lift mb-0 mb-md-3 mb-lg-0" onclick="gaTracking('sign_up', 'click', 'clickHeroBtn')">
+                  <a
+                    data-toggle="modal"
+                    href="#modalSignupHorizontal"
+                    class="btn btn-primary mr-1 lift mb-0 mb-md-3 mb-lg-0"
+                    onclick="gaTracking('workspace_request', 'click', 'workspaceRequestDemoBtn')"
+                  >
                     Request Demo
                   </a>
                 </div>
@@ -206,12 +202,11 @@
             <p>
               Goodbye, hearsay. Hello, TRUTH!
             </p>
-            <!-- TODO: gaTracking -->
             <a 
               data-toggle="modal"
               href="#modalSignupHorizontal"
               class="btn btn-primary lift mt-4"
-              onclick="gaTracking('sign_up', 'click', 'clickHeroBtn')"
+              onclick="gaTracking('workspace_request', 'click', 'workspaceGetStartedBtn')"
             >
               Get Started
             </a>

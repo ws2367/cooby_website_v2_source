@@ -17,33 +17,41 @@
       <div class="container pt-md-4 pb-6">
         <div class="row justify-content-center">
 
-          <div class="order-1 col-12 col-md-6 pt-4 pt-md-6" data-aos="fade-right">
+          <div class="order-1 col-12 col-md-6 pt-4 pt-md-6">
             <div>
               <!-- Preheading -->
-              <h1 class="font-weight-bold">
+              <h1 class="font-weight-bold" data-aos="fade-right">
                 Bring Your Customer Communication to Order on WhatsApp
               </h1>
             </div>
             <div id="try-btn-and-aux-text" class="table-container">
-              <p class="font-size-lg text-muted mb-7">
+              <p class="font-size-lg text-muted mb-7" data-aos="fade-right" data-aos-delay="100">
                 Lose track of your work chats in WhatsApp inbox? Try WhatsApp Tabs. Prioritize chats. Reduce clutter. Never miss a follow-up. 
               </p>
               <section class="d-flex flex-column align-items-start">
                 <!-- CTA Button -->
                 <div>
                   <!-- <a class="btn btn-outline btn-secondary-soft mb-6 disabled">Coming Soon &nbsp;<span class="font-weight-light">just a little more time </span></a> -->
-                  <a target="_blank"
-                      class="d-block btn btn-primary lift mb-6"
-                      onclick="gaTracking('install_extension', 'click', 'IndexAddToChromeBtn')"
-                      href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0">
-                      Add to Chrome
+                  <a 
+                    target="_blank"
+                    class="d-block btn btn-primary lift mb-6"
+                    onclick="gaTracking('install_extension', 'click', 'IndexAddToChromeBtn')"
+                    href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
+                    Add to Chrome
                   </a>
                 </div>
-                <!-- BRANDS (for web)
-                ================================================== -->
-                @@include("partials/brands.html", {
-                "classList": "row justify-content-center d-none d-md-flex",
-                })
+
+                <div data-aos="fade-right" data-aos-delay="300">
+                  <!-- BRANDS (for web)
+                  ================================================== -->
+                  @@include("partials/brands.html", {
+                    "classList": "row justify-content-center d-none d-md-flex",
+                    })
+                </div>
+                
               </section>
             </div>
           </div>

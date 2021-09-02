@@ -1,4 +1,3 @@
-<!-- Signup: Horizontal  ================================================== -->
 <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -49,7 +48,7 @@
 
               <!-- Shape -->
               <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                @@include("../assets/img/shapes/curves/curve-4.svg")
+                @@include("../../assets/img/shapes/curves/curve-4.svg")
               </div>
             </div>
           </div>
@@ -115,7 +114,13 @@
                   <!-- Why Cooby -->
                   <div class="col-12 col-md-6">
                     <div class="form-label-group">
-                      <select class="form-control form-select custom-select" aria-label="Why Cooby?" name="motivation" required>
+                      <select
+                        class="form-control form-select custom-select"
+                        style="padding: 0 12px;"
+                        aria-label="Why Cooby?"
+                        name="motivation"
+                        required
+                      >
                         <option value="">Why Cooby?</option>
                         <option value="Organize and tag clients">Organize and tag clients</option>
                         <option value="Import information from WhatsApp">Import information from WhatsApp</option>
@@ -132,7 +137,13 @@
                   <!-- Country Code -->
                   <div class="col-12 col-md-6">
                     <div class="form-label-group" style="text-align:left">
-                      <select class="form-control form-select custom-select" id="country-code-selector" aria-label="Country Code" name="countryCode">
+                      <select
+                        class ="form-control form-select custom-select"
+                        style="padding: 0 12px;"
+                        id="signup_country-code-selector"
+                        aria-label="Country Code"
+                        name="countryCode"
+                      >
                         <option value="">Country Code</option>
                         <!-- load by js -->
                       </select>
@@ -173,8 +184,7 @@
   </div>
 </div>
 
-
-<div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="Request Received" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -191,28 +201,25 @@
 
         <!-- Heading -->
         <h2 class="font-weight-bold text-center pt-5 mb-1" id="modalExampleTitle">
-          Request Access
+          Request Received
         </h2>
 
         <!-- Text -->
         <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-          Our product expert will show you the product demo via video chat at a time of your convience.
+          Thanks! Our enterprise experts will be in touch shortly. 
         </p>
 
-        <!-- Form -->
-        <!-- Submit -->
-        <a class="btn btn-block btn-primary mt-3 lift"
-           id='scheduleModalBtn'
-           href='https://calendly.com/cooby/cooby-onboarding-session'
-           target="_blank">
-          Let's schedule!
+        <!-- Button -->
+        <a class="btn btn-block btn-primary mt-3 lift" id="confirmationModalBtn">
+          Done!
         </a>
+
       </div>
     </div>
   </div>
 </div>
 
-
+<!-- deprecated -->
 <div class="modal fade" id="downloadAndScheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">

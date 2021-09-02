@@ -1,0 +1,256 @@
+<div class="modal fade" id="modalRequestFormHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalRequestFormHorizontalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="card card-row">
+        <div class="row">
+          <div class="col-12 col-md-5">
+           <div class="bg-cover card-body bg-cooby-light-gray h-100">
+            <!-- Close -->
+              <button type="button" class="modal-close close d-md-none" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h6 class="text-uppercase text-primary font-weight-bold">
+                Contact us
+              </h6>
+              <h2 class="font-weight-bold">
+                Chat with us and start your Cooby journey!
+              </h2>
+              <!-- Text -->
+              <p class="font-weight-bold mb-6 mb-md-0">
+                Trusted by over <span data-toggle="countup" data-from="0" data-to="2000" data-aos data-aos-id="countup:in">0</span> salespeople worldwide.
+              </p>
+              
+              <ul class="list-group">
+                <li class="compressed-list bg-cooby-light-gray" style="list-style: none; margin:30px auto 10px 0;">
+                    <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                    </div>
+                    No credit card required</li>
+                <li class="compressed-list bg-cooby-light-gray" style="list-style: none; margin:0 auto 10px 0;">
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                    </div>
+                    Free consultation</li>
+                <li class="compressed-list bg-cooby-light-gray" style="list-style: none;">
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                    </div>
+                    Build stronger teams
+                </li>
+              </ul>
+              <p class="mt-6 mb-6 mb-md-0">
+                Questions? Submit the form and we'll be in touch.
+              </p>
+
+              <!-- Shape -->
+              <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                @@include("../../assets/img/shapes/curves/curve-4.svg")
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="card-body" style="text-align:center;">
+
+              <!-- Close -->
+              <button type="button" class="modal-close close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalRequestFormHorizontalTitle">
+                Get Started with Cooby
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                We’ll get in contact with you shortly!
+              </p>
+
+              <form id="request_form">
+                <div class="row">
+                  <!-- First Name -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <input type="text" class="form-control form-control-flush" name="firstName" placeholder="First Name" required>
+                      <label for="registrationFirstName">First Name</label>
+                    </div>
+                  </div>
+                  <!-- Last Name -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <input type="text" class="form-control form-control-flush" name="lastName" placeholder="Last Name" required>
+                      <label for="registrationLastName">Last Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Email -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <input type="email" class="form-control form-control-flush" name="email" placeholder="Email" required>
+                      <label for="registrationEmail">Email</label>
+                    </div>
+                  </div>
+                  <!--Title -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <input type="text" class="form-control form-control-flush" name="title" placeholder="Title">
+                      <label for="registrationRole">Title</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Company -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <input type="text" class="form-control form-control-flush" name="company" placeholder="Company">
+                      <label for="registrationCompany">Company</label>
+                    </div>
+                  </div>
+                  <!-- Company Size -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group">
+                      <select
+                        class="form-control form-select custom-select"
+                        style="padding: 0 12px;"
+                        aria-label="Company Size"
+                        name="companySize"
+                        required
+                      >
+                        <option value="">Company  Size</option>
+                        <option value="1-10 employees">1-10 employees</option>
+                        <option value="11-100 employees">11-100 employees</option>
+                        <option value="101-1000 employees">101-1000 employees</option>
+                        <option value="1001+ employees">1001+ employees</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Country Code -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <select
+                        class="form-control form-select custom-select"
+                        style="padding: 0 12px;"
+                        id="workspace_country-code-selector"
+                        aria-label="Country Code"
+                        name="countryCode"
+                      >
+                        <option value="">Country Code</option>
+                        <!-- load by js -->
+                      </select>
+                    </div>
+                  </div>
+                  <!-- WA Number -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-label-group" style="text-align:left">
+                      <input type="tel" class="form-control form-control-flush" name="phone" placeholder="WhatsApp number">
+                      <label for="registrationPhone">WhatsApp number</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+
+                    <!-- Submit -->
+                    <button class="btn btn-primary mt-3 lift w-custom">
+                      Submit
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div> <!-- / .row -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <!-- Close -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+
+        <!-- Image -->
+        <div class="text-center">
+          <img src="@@webRoot/assets/img/illustrations/schedule.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+        </div>
+
+        <!-- Heading -->
+        <h2 class="font-weight-bold text-center pt-5 mb-1" id="modalExampleTitle">
+          Request Access
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+          Our product expert will show you the product demo via video chat at a time of your convience.
+        </p>
+
+        <!-- Form -->
+        <!-- Submit -->
+        <a class="btn btn-block btn-primary mt-3 lift"
+           id='scheduleModalBtn'
+           href='https://calendly.com/cooby/cooby-onboarding-session'
+           target="_blank">
+          Let's schedule!
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- deprecated -->
+<div class="modal fade" id="downloadAndScheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <!-- Close -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+
+        <!-- Image -->
+        <div class="text-center">
+          <img src="@@webRoot/assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+        </div>
+
+        <!-- Heading -->
+        <h2 class="font-weight-bold text-center mb-4" id="modalExampleTitle">
+          Download Cooby App
+        </h2>
+        <div class="text-center">
+          <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1 mb-4" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+            <img src="@@webRoot/assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+          </a>
+          <!-- Text -->
+          <p class="font-size-lg text-center text-muted">
+            Then schedule a time with us. We'll show you the product demo via video chat at a time of your convience.
+          </p>
+          <p class="font-size-sm text-center text-muted mb-6 mb-md-8">
+            Do you use Android? No worries. Schedule a demo for Cooby Web app 👇
+          </p>
+        </div>
+        <!-- Form -->
+        <!-- Submit -->
+        <a class="btn btn-block btn-primary mt-3 lift"
+           id='downloadAndScheduleModalBtn'
+           href='https://calendly.com/cooby/cooby-onboarding-session'
+           target="_blank">
+          Let's schedule!
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

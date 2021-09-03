@@ -13357,7 +13357,7 @@ ul li {
   background-color: #5005F2; }
 
 .btn-primary-soft, .btn-primary-soft:hover, .btn-primary-soft:focus {
-  background-color: white;
+  background: none;
   border: 2px solid #5005F2;
   color: #5005F2; }
 

@@ -64,7 +64,7 @@ ul li{
 }
 
 .btn-primary-soft, .btn-primary-soft:hover, .btn-primary-soft:focus{
-    background-color: white;
+    background: none;
     border:2px solid #5005F2;
     color: #5005F2;
 }
@@ -117,8 +117,9 @@ h3{
 	color:#5005F2;
 }
 .hero-responsive{
-    background-size: 55% auto; background-repeat: no-repeat;
-    background-position: bottom;
+	background-size: 55% auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 @media (max-width: 991.98px){
@@ -144,7 +145,18 @@ h3{
 		padding-right: 1rem;
 		padding-left: 1rem;
 	}
-	.w-custom{
-	width:60%;
+
+	.w-custom {
+		width:60%;
+	}
+
+	#navbar-product-dropdown {
+		padding: 22px;
+		left: 115%;
+	}
+
+	#navbar-community-dropdown {
+		padding: 22px;
+		left: 78%
 	}
 }

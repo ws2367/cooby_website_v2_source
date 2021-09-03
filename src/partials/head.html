@@ -6,24 +6,31 @@
 <meta name="facebook-domain-verification" content="7kq09yr5tns7v7k49aff2vde03ab9j" />
 
 <!-- Open Graph -->
-<title>@@pageTitle</title>
-<meta property="og:title" content="@@pageTitle" />
 <meta property="og:type" content="website" />
 
-@@if (context.description){
+@@if (context.pageTitle) {
+  <title>@@pageTitle</title>
+  <meta property="og:title" content="@@pageTitle" />
+}
+@@if (!context.pageTitle) {
+  <title>Cooby | Take Control of Your WhatsApp Chats</title>
+  <meta property="og:title" content="Cooby | Take Control of Your WhatsApp Chats" />
+}
+
+@@if (context.description) {
   <meta name="description" content="@@description" />
   <meta property="og:description" content="@@description" />
 }
 @@if (!context.description) {
-  <meta name="description" content="Build your sales engine without a spreadsheet. Strengthen your sales relationships." />
-  <meta property="og:description" content="Build your sales engine without a spreadsheet. Strengthen your sales relationships." />
+  <meta name="description" content="Declutter your mindspace, reduce noise and organize your chats" />
+  <meta property="og:description" content="Declutter your mindspace, reduce noise and organize your chats" />
 }
 
 @@if (context.ogImage) {
   <meta property="og:image" content="@@ogImage" />
 }
 @@if (!context.ogImage) {
-  <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_eng.jpg" />
+  <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_extension.png" />
 }
 
 <meta property="og:url" content="https://cooby.co" />

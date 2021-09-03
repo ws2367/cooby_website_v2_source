@@ -1,6 +1,7 @@
 <!-- SIGNUP MODAL
 ================================================== -->
-@@include("signup.html")
+@@include("form/signup-form.html")
+@@include("form/request-form.html")
 
 <nav class="navbar navbar-expand-lg @@classList cooby-shadow fixed-top font-eng">
   <div class="@@container">
@@ -26,76 +27,47 @@
 
       <!-- Navigation -->
       <ul class="navbar-nav ml-auto" style="margin:auto;">
-        <li class="nav-item dropdown d-none">
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-muted" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Use Cases
+            Products
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="@@webRoot/use-cases/insurance.html">Insurance</a>
-            <a class="dropdown-item" href="@@webRoot/use-cases/direct-sales.html">Direct Sales</a>
+          <div id="navbar-product-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item @@extension" href="@@webRoot">Cooby Extension</a>
+            <a class="dropdown-item @@workspace" href="@@webRoot/workspace.html">Cooby Workspace</a>
+            <a class="dropdown-item @@mobileCRM" href="@@webRoot/mobile-crm.html">Cooby Mobile CRM</a>
           </div>
         </li>
-        <li class="nav-item d-none">
-          <a class="nav-link" id="navbarProduct" href="@@webRoot/features.html">
-            Features
-          </a>
-        </li>
+
         <li class="nav-item">
-          <a class="nav-link" id="navbarService" href="@@webRoot/extension/">
-            WhatsApp Tabs
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="navbarContact" href="@@webRoot/insights.html">
-            Cooby Insights
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="navbarTeam" href="@@webRoot/pricing.html">
+          <a class="nav-link" id="navbarPricing" href="@@webRoot/pricing.html">
             Pricing
           </a>
         </li>
-        <li class="nav-item d-none">
-          <a class="nav-link" id="navbarTeam" href="@@webRoot/blog.html">
-            Blog
+        <li class="nav-item">
+          <a class="nav-link" id="navbarPrivacy" href="@@webRoot/privacy.html">
+            Privacy
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="navbarContact" href="@@webRoot/support.html">
+          <a class="nav-link" id="navbarSupport" href="@@webRoot/support.html">
             Support
           </a>
         </li>
+        
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-muted" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Language
+            Join Community
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item active" href="@@webRoot">English</a>
-            <a class="dropdown-item" href="@@webRoot/zh-tw">繁體中文</a>
+          <div id="navbar-community-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item @@impact" href="@@webRoot/impact.html">Stories of Impact</a>
+            <a class="dropdown-item @@blog" href="@@webRoot/blog.html">Blog</a>
           </div>
-         </li>
-      </ul>
-      <ul class="navbar-nav ml-auto d-none" style="margin-right: 1rem;">
-        <li class="nav-item">
-          <a id="signInSignUp"
-             href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
-             target="_blank"
-             onclick="gaTracking('log_in', 'click', 'Navbar')"
-             >
-            Log In
-          </a>
         </li>
-      </ul>
-      <!-- Button -->
-      <div class="text-center pb-md-0 pb-8  d-none">
-        <a class="navbar-btn btn btn-sm btn-primary lift"
-           data-toggle="modal"
-           href="#modalSignupHorizontal"
-           onclick="gaTracking('sign_up', 'click', 'Navbar')">
-          Try Now
-        </a>
-      </div>
 
+      </ul>
 
     </div>
 

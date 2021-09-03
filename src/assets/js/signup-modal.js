@@ -5,12 +5,21 @@ $('#signup_form').submit(function(e){
     inputData[this.name] = $(this).val().trim()
   })
   var outputData = new FormData()
-  outputData.append('name', inputData.firstName + ' ' + inputData.lastName)
+  var name
+  if (!inputData.firstName && !inputData.lastName) { // deal with zh-tw version form
+    name = inputData.name
+  } else {
+    name = inputData.firstName + ' ' + inputData.lastName
+  }
+  outputData.append('application', 'mobile CRM')
+  outputData.append('name', name)
   outputData.append('company', inputData.company)
   outputData.append('email', inputData.email)
   outputData.append('title', inputData.title)
   outputData.append('motivation', inputData.motivation)
-  outputData.append('phone', inputData.countryCode + ' ' + inputData.phone)
+  outputData.append('phone', 
+    (inputData.countryCode) ? inputData.countryCode : '' + ' ' + inputData.phone
+  )
 
   //do some verification
   $.post({
@@ -22,22 +31,19 @@ $('#signup_form').submit(function(e){
     {
       console.log("success");
       $('#modalSignupHorizontal').modal('hide');
-      $('#scheduleModal').modal('show');
-      // $('#downloadAndScheduleModal').modal('show');
+      $('#confirmationModal').modal('show');
     }
   });
 });
 
-$('#scheduleModalBtn').click(function(e) {
-  $('#scheduleModal').modal('hide');
+$('#confirmationModalBtn').on('click', function() {
+  $('#confirmationModal').modal('hide');
+})
 
-});
-
-
-$('#downloadAndScheduleModalBtn').click(function(e) {
-  $('#downloadAndScheduleModal').modal('hide');
-});
-
+// deprecated
+// $('#downloadAndScheduleModalBtn').click(function(e) {
+//   $('#downloadAndScheduleModal').modal('hide');
+// });
 
 $(document).ready(function() {
   
@@ -46,16 +52,17 @@ $(document).ready(function() {
   }
 
   $.getJSON(window.location.origin + '/country-codes.json', function(json) {
-    var container = $('#country-code-selector')
-    for(var i=0; i<json.length-1; i++) {
-      var option = $('<option>', {value: json[i].dial_code}).text(json[i].name + ' ' + json[i].dial_code)
-      container.append(option)
-    }
+    var signupCountryCodeContainer = $('#signup_country-code-selector')
+    var workspaceCountryCodeContainer = $('#workspace_country-code-selector')
+
+    appendCountryCodeOption(json, signupCountryCodeContainer)
+    appendCountryCodeOption(json, workspaceCountryCodeContainer)
   })
 
+  function appendCountryCodeOption(json, targetEl) {
+    for(var i=0; i<json.length-1; i++) {
+      var option = $('<option>', {value: json[i].dial_code}).text(json[i].name + ' ' + json[i].dial_code)
+      targetEl.append(option)
+    }
+  }
 });
-
-
-// (function(){
-//   $('#modalSignupHorizontal').modal('show');
-// })();

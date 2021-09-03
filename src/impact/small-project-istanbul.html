@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html")
+  </head>
+  <body class="font-eng">
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container",
+    "impact": "active"
+    })
+
+    <!-- IMAGE
+    ================================================== -->
+    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax" style="background-image: url(/assets/img/covers/cover-small_projects_istanbul.png);"></section>
+
+    <!-- CONTENT -->
+    <section class="pt-8 pt-md-10 pb-8 pb-md-12 px-4">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 d-flex align-items-center mb-8 pl-0">
+            <a href="/impact.html">
+              <img src="/assets/img/icons/back-arrow.svg" alt="">
+            </a>
+            <h2 class="font-weight-bold mb-0 ml-2">
+              Small Projects Istanbul
+            </h2>
+          </div>
+
+          <div>
+            <p>
+              Small Projects Istanbul is a community-based organization that strives to provide a safe space and a community in Istanbul, Turkey to over 300 displaced families due to conflicts in Syria, Middle East, and the North Africa Region.
+            </p>
+            <p>
+              They run a five-story establishment with multiple community service facilities that aim to provide psychosocial support, education, protection, and programs that enable refugees to develop adequate income-generating and practical skills. Through the said programs, community members are going to be equipped to start a new life in Turkey; a place they can now call home.
+            </p>
+            <p>
+              As the community is continuously growing, circulating important information to stakeholders is getting tougher and tougher for the management. Spending over 4 hours a day just to go through their WhatsApp inbox is consuming precious time that they could utilize for more urgent matters.
+            </p>
+            <p>
+              With the goal of reducing distraction and maximizing efficiency, management reached out to Cooby for help. Within just a few weeks of subscribing to Cooby, they have noticed a significant difference in time consumed sorting through messages and organizing their inbox. Now, they are able to divert more attention and focus on their programs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("../partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

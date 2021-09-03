@@ -13357,7 +13357,7 @@ ul li {
   background-color: #5005F2; }
 
 .btn-primary-soft, .btn-primary-soft:hover, .btn-primary-soft:focus {
-  background-color: white;
+  background: none;
   border: 2px solid #5005F2;
   color: #5005F2; }
 
@@ -13432,7 +13432,13 @@ h3 {
     padding-right: 1rem;
     padding-left: 1rem; }
   .w-custom {
-    width: 60%; } }
+    width: 60%; }
+  #navbar-product-dropdown {
+    padding: 22px;
+    left: 115%; }
+  #navbar-community-dropdown {
+    padding: 22px;
+    left: 78%; } }
 
 #BZ0_popup_if_mobile {
   position: fixed;

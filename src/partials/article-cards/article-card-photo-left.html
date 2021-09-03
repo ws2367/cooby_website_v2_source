@@ -9,7 +9,7 @@
       </span>
 
     </div>
-    <a class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(@@backgroundImage);" href="#!">
+    <a class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(@@backgroundImage);" href="@@storyURL">
 
       <!-- Image (placeholder) -->
       <img src="@@backgroundImage" alt="..." class="img-fluid d-md-none invisible">
@@ -22,7 +22,7 @@
     <div class="col-12 col-md-6">
 
       <!-- Body -->
-      <a class="card-body" href="#!">
+      <a class="card-body" href="@@storyURL">
         <!-- Heading -->
         <h3>@@title</h3>
         <!-- Text -->
@@ -30,7 +30,7 @@
       </a>
 
       <!-- Meta -->
-      <a class="card-meta" href="#!">
+      <a class="card-meta" href="@@storyURL">
         <!-- Divider -->
         <hr class="card-meta-divider">
         <!-- Avatar -->
@@ -38,10 +38,9 @@
           <img src="@@avatarImage" alt="..." class="avatar-img rounded-circle">
         </div>
         <!-- Author -->
-        <h6 class="text-uppercase text-muted mr-2 mb-0">@@author</h6>
+        <h6 class="text-uppercase text-muted mr-2 mb-0"><strong>@@author</strong> | @@jobPosition</h6>
         <!-- Date -->
         <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-          <!-- <time datetime="2019-05-29">@@date</time> -->
           @@date
         </p>
       </a>

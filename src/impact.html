@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html")
+  </head>
+  <body class="font-eng">
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container",
+    "impact": "active"
+    })
+  
+    <!-- TITLE
+    ================================================== -->
+    <section class="pb-6 pb-md-8 pt-12 bg-white overflow-hidden">
+      <div class="container pt-md-4 pb-6">
+        <div class="row justify-content-center">
+
+          <div class="order-1 col-12 col-md-6 pt-4 pt-md-6 mb-8 mb-md-0" data-aos="fade-right">
+            <div>
+              <!-- Preheading -->
+              <h1 class="font-weight-bold">
+                Life &nbsp;<img src="/assets/img/brand.svg" alt="">&nbsp;
+                better when we all come together! 
+              </h1>
+            </div>
+            <div id="try-btn-and-aux-text" class="table-container">
+              <p class="font-size-lg text-muted mb-7">
+                This is a safe space where your feedback and opinion matters, there is no room for haters! <br><br>
+                For efficiency tips, tricks, and hacks, we've got each other's backs! 
+              </p>
+              <section class="d-flex flex-column align-items-start">
+                <!-- CTA Button -->
+                <div>
+                  <a 
+                    href="https://www.facebook.com/groups/coobians/"
+                    class="btn btn-primary mr-1 lift mb-0 mb-md-3 mb-lg-0"
+                    target="_blank"
+                    onclick="gaTracking('visit_facebook_group', 'click', 'StoriesJoinCommunityBtn')"
+                  >
+                    Join Community
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+          
+          <div class="order-2 col-12 col-md-6 px-0" data-aos="fade-left">
+            <div class="h-100 w-100 d-flex justify-content-center align-items-center">
+              <video playsinline autoplay muted loop
+                src="assets/video/come-join-us.mp4"
+                class="img-fluid pt-0 pt-md-6 come-join-us"
+                data-aos="fade-left"></video>
+            </div>
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- LATEST STORIES
+    ================================================== -->
+    <section class="my-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="font-weight-bold mb-6">Stories of Impact</h2>
+
+            @@include("partials/article-cards/article-card-photo-left.html", {
+              "tag": "customer",
+              "backgroundImage": "/assets/img/covers/cover-small_projects_istanbul.png",
+              "title": "Small Projects Istanbul",
+              "brief": "Small Projects Istanbul is an NGO that strives to provide a safe space and a community in Turkey to over 300 displaced families. By having an organized WhatsApp inbox, the management team is able to maximize efficiency in communicating with stakeholders and divert their focus and attention to more important matters. ",
+              "avatarImage": "/assets/img/avatars/anas.png",
+              "author": "Anas",
+              "jobPosition": "Community outreach manager",
+              "date": "SEP 2021",
+              "storyURL": "/impact/small-project-istanbul.html"
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENT SPONSORSHIP
+    ================================================== -->
+    <section class="pt-8 pb-10 bg-cooby-light-gray">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 pb-4 pb-md-6">
+            <h2 class="font-weight-bold text-center">Student Sponsorships</h2>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="w-90 h-100 bg-white p-5">
+              <h5 class="m-0 font-weight-light">Jayant</h5>
+              <span class="sponsorship-subtitle">Siliguri Institute Of Technology</span>
+              <p>
+                This chrome extension helps me a lot in many ways, First of all, I don't like to be unorganized and this extension helped me a lot in being and connecting with friends and people in an organized manner. This sorts my college needs, personal needs helps me to categorize things.
+                <br>
+                I am very grateful to you and your all team for such a massive effort and for building WhatsApp Cooby, You guys did tremendous work.❤️
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="w-90 h-100 bg-white p-5">
+              <h5 class="m-0 font-weight-light">Student</h5>
+              <span class="sponsorship-subtitle">International Institute of Information Technology</span>
+              <p>
+                Thanks to Cooby for creating this amazing tool. It really helped in managing my WhatsApp chats and plays a role in increasing my productivity by giving me the option to create different chat sections to focus on my work and keep distracting chats away during the same. Hoping it will incorporate many other features in the coming future. Great job Cooby :-}
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORED MEMBERSHIP
+    ================================================== -->
+    <section class="py-6 py-md-10 bg-white">
+      <div class="container order-bottom-cooby">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-7">
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold mb-0 mb-md-1">
+              Sponsored Membership
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-5 mb-md-0 pt-6">
+              We believe a good tool should be accessible to everyone. If you’re a student, work at a non-profit, or are struggling to make ends meet, please send us your story on WhatsApp and we will sponsor your membership if approved.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-5 text-center">
+
+            <!-- Button -->
+            <a href="https://wa.me/17075631611?text=Hi!%20I%20have%20a%20story%20to%20share." class="btn btn-primary lift w-75" target="_blank">
+              Share with Us
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+  <style>
+    video.come-join-us {
+      max-width: 75%;
+    }
+
+    .sponsorship-subtitle {
+      display: block;
+      margin-bottom: 24px;
+      color: #939598;
+      font-size: 12px;
+    }
+
+    @media (max-width: 992px) {
+      video.come-join-us {
+        max-width: 90%;
+      }
+    }
+  </style>
+</html>

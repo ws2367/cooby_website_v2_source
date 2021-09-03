@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+  <!-- Redirect to current index -->
+  <meta http-equiv="refresh" content="0; url=/" />
   <head>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WL6BVRR"></script>
 
@@ -9,19 +11,23 @@
     <meta name="facebook-domain-verification" content="7kq09yr5tns7v7k49aff2vde03ab9j" />
 
     <!-- Open Graph -->
-    <title>Cooby | Take Control of Your WhatsApp Chats</title>
-    <meta property="og:title" content="Cooby | Take Control of Your WhatsApp Chats" />
     <meta property="og:type" content="website" />
 
+    
+      <title>Cooby | Take Control of Your WhatsApp Chats</title>
+      <meta property="og:title" content="Cooby | Take Control of Your WhatsApp Chats" />
+    
+    
+
+    
     
       <meta name="description" content="Declutter your mindspace, reduce noise and organize your chats" />
       <meta property="og:description" content="Declutter your mindspace, reduce noise and organize your chats" />
     
-    
 
     
-      <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_extension.png" />
     
+      <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_extension.png" />
     
 
     <meta property="og:url" content="https://cooby.co" />
@@ -167,21 +173,12 @@
     <!-- End Facebook Pixel Code -->
 
   </head>
-  <style>
-
-    @media screen and (max-width: 320px){
-      #insight_bz_0 {
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
   <body class="font-eng">
 
     <!-- NAVBAR
     ================================================== -->
     <!-- SIGNUP MODAL
     ================================================== -->
-    <!-- Signup: Horizontal  ================================================== -->
     <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -298,7 +295,13 @@
                       <!-- Why Cooby -->
                       <div class="col-12 col-md-6">
                         <div class="form-label-group">
-                          <select class="form-control form-select custom-select" aria-label="Why Cooby?" name="motivation" required>
+                          <select
+                            class="form-control form-select custom-select"
+                            style="padding: 0 12px;"
+                            aria-label="Why Cooby?"
+                            name="motivation"
+                            required
+                          >
                             <option value="">Why Cooby?</option>
                             <option value="Organize and tag clients">Organize and tag clients</option>
                             <option value="Import information from WhatsApp">Import information from WhatsApp</option>
@@ -315,7 +318,13 @@
                       <!-- Country Code -->
                       <div class="col-12 col-md-6">
                         <div class="form-label-group" style="text-align:left">
-                          <select class="form-control form-select custom-select" id="country-code-selector" aria-label="Country Code" name="countryCode">
+                          <select
+                            class ="form-control form-select custom-select"
+                            style="padding: 0 12px;"
+                            id="signup_country-code-selector"
+                            aria-label="Country Code"
+                            name="countryCode"
+                          >
                             <option value="">Country Code</option>
                             <!-- load by js -->
                           </select>
@@ -356,8 +365,7 @@
       </div>
     </div>
 
-
-    <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="Request Received" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
@@ -374,28 +382,25 @@
 
             <!-- Heading -->
             <h2 class="font-weight-bold text-center pt-5 mb-1" id="modalExampleTitle">
-              Request Access
+              Request Received
             </h2>
 
             <!-- Text -->
             <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              Our product expert will show you the product demo via video chat at a time of your convience.
+              Thanks! Our enterprise experts will be in touch shortly. 
             </p>
 
-            <!-- Form -->
-            <!-- Submit -->
-            <a class="btn btn-block btn-primary mt-3 lift"
-               id='scheduleModalBtn'
-               href='https://calendly.com/cooby/cooby-onboarding-session'
-               target="_blank">
-              Let's schedule!
+            <!-- Button -->
+            <a class="btn btn-block btn-primary mt-3 lift" id="confirmationModalBtn">
+              Done!
             </a>
+
           </div>
         </div>
       </div>
     </div>
 
-
+    <!-- deprecated -->
     <div class="modal fade" id="downloadAndScheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -519,424 +524,16 @@
         </button>
       </div>
     </section>
-
-    <!-- EXTENSION
-    ================================================== -->
-    <section class="pb-2 pt-12 bg-white">
-      <div class="container pt-md-4 pb-6">
-        <div class="row justify-content-center">
-
-          <div class="order-1 col-12 col-md-6 pt-4 pt-md-6" data-aos="fade-right">
-            <div>
-              <!-- Preheading -->
-              <h1 class="font-weight-bold">
-                Bring Your Customer Communication to Order on WhatsApp
-              </h1>
-            </div>
-            <div id="try-btn-and-aux-text" class="table-container">
-              <p class="font-size-lg text-muted mb-7">
-                Lose track of your work chats in WhatsApp inbox? Try WhatsApp Tabs. Prioritize chats. Reduce clutter. Never miss a follow-up. 
-              </p>
-              <section class="d-flex flex-column align-items-start">
-                <!-- CTA Button -->
-                <div>
-                  <!-- <a class="btn btn-outline btn-secondary-soft mb-6 disabled">Coming Soon &nbsp;<span class="font-weight-light">just a little more time </span></a> -->
-                  <a target="_blank"
-                      class="d-block btn btn-primary lift mb-6"
-                      onclick="gaTracking('install_extension', 'click', 'IndexAddToChromeBtn')"
-                      href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm?hl=en&authuser=0">
-                      Add to Chrome
-                  </a>
-                </div>
-                <!-- BRANDS (for web)
-                ================================================== -->
-                <div class="row justify-content-center d-none d-md-flex">
-                  <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Seqouia.svg">
-                  </div>
-                  <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Facebook.svg">
-                  </div>
-                  <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Digit.svg">
-                  </div>
-                  <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Upmesh.svg">
-                  </div>
-                  <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_ReUBird.svg">
-                  </div>
-                  <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Mandala.svg"> 
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-          
-          <div class="order-2 col-12 col-md-6 px-0" data-aos="fade-left">
-            <img class="mw-150" src="/assets/img/extension/extension-landing.png" alt="">
-          </div>
-
-          <!-- BRANDS (for mobile)
-          ================================================== -->
-          <div class="order-3 row justify-content-center col-12 d-md-none">
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Seqouia.svg">
-            </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Facebook.svg">
-            </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Digit.svg">
-            </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Upmesh.svg">
-            </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_ReUBird.svg">
-            </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <img class="img-fluid img-responsive" src="/assets/img/brands/Logo_Mandala.svg"> 
-            </div>
-          </div>
-
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- REVIEWS
-    ================================================== -->
-    <section class="py-7 py-md-10 pb-4 bg-cooby-light-gray d-flex justify-content-center">
-      <div class="col-12 col-md-6">
-        <div class="mb-2">
-          <img src="/assets/img/brands/Logo_HustleFund.png" style="width: 132px;">
-        </div>
-        <p class="d-block mb-2 quote-paragraph">
-          "I've been searching for a solution to manage my out-of-control Whatsapp inbox. Cooby instantly brings order by allowing me to create lists of priority folks to respond to, and muting the group chats that can be incredibly distracting"
-        </p>
-        <div class="row align-items-center py-5 border-top border-bottom">
-          <div class="col-auto">
-            <!-- Avatar -->
-            <div class="avatar avatar-lg">
-              <img class="avatar-img rounded-circle article-meta-avatar" src="/assets/img/avatars/shiyan.png">
-            </div>
-          </div>
-          <div class="col ml-n5">
-            <!-- Name -->
-            <h6 class="text-uppercase mb-0 article-author">Shiyan Koh</h6>
-            <!-- Date -->
-            <div class="font-size-xs text-gray">Managing Partner at Hustle Fund</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES
-    ================================================== -->
-    <section class="pt-6 pb-4 py-md-10 bg-white">
-      <div class="container">
-
-        <div class="row mb-8 mb-md-6 mb-lg-4">
-          <div class="col-12 order-2 col-md-6 order-md-1">
-            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_0.png" alt="">
-          </div>
-          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center">
-            <div>
-              <h2 class="font-weight-bold">Your WhatsApp Inbox Is Going Out of Control</h2>
-              <p>
-                Customers, colleagues, vendors, plus friends and family all clutter your WhatsApp inbox. You need to keep things in order on WhatsApp as you scale your business.
-              </p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="row mb-8 mb-md-6 mb-lg-4">
-          <div class="col-12 order-2 col-md-6 order-md-2">
-            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_1.png" alt="">
-          </div>
-          <div class="col-12 order-1 col-md-6 order-md-1 d-flex align-items-center">
-            <div>
-              <h2 class="font-weight-bold">A Better and Faster Way to Manage Customers Than a CRM</h2>
-              <p>
-                CRM busywork slows you down. It forces you to spend more time entering data into another system.<br><br>
-                Unlike a CRM, WhatsApp Tabs is built for speed. Zero setup time. Build your own communication workflows in 30 seconds.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 order-2 col-md-6 order-md-1">
-            <img class="img-fluid img-responsive" src="/assets/img/extension/extension-pain_point_2.png" alt="">
-          </div>
-          <div class="col-12 order-1 col-md-6 order-md-2 d-flex align-items-center">
-            <div>
-              <h2 class="font-weight-bold">Supercharge Your WhatsApp for Work</h2>
-              <p>
-                WhatsApp is built for personal use. Yet, your business relies on it. Mute, Pin, etc aren't enough for you.<br><br>
-                We combine everything from tabs, search, and sales processes in one simple and intuitive workspace—right within WhatsApp.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- TAKE CONTROL
-    ================================================== -->
-    <section class="pt-7 pt-md-10 bg-cooby-light-gray">
-      <div class="container d-flex flex-column text-center justify-content-center">
-        <h2 class="font-weight-bold">Take Control of Your WhatsApp Chats</h2>
-        <p class="px-4 px-md-8 px-lg-10">
-          It's easy to lose track of conversations. Use Unread, Awaiting Reply, Needs Reply tabs to find a chat thread much faster and never miss a message again!
-        </p>
-        <div>
-          <video playsinline autoplay muted
-              src="/assets/video/features/extension_features.mp4"
-              class="img-fluid float-end mb-0 mt-2 mt-md-4"
-              data-aos="fade-left"></video>
-          <!-- <img class="img-fluid img-responsive" src="/assets/img/extension/extension-take_control.png"> -->
-        </div>
-      </div>
-    </section>
-
-    <section class="py-8 py-md-12 bg-white">
+    
+    <section class="mt-12">
       <div class="container">
         <div class="row">
-
-          <div class="col-12 col-md-5 d-flex align-items-center">
-            <div>
-              <h2 class="font-weight-bold">We Design and Build With Privacy at Heart</h2>
-              <p class="mb-6 mb-md-8">
-                Your privacy is of paramount importance to us. We will NEVER sell your data or keep it hostage. We do not store your conversation data by default. Think of WhatsApp Tabs as a UI layer on top of WhatsApp.
-              </p>
-              <a 
-                class="btn btn-primary lift mb-6"
-                href="/extension/privacy.html"
-                onclick="gaTracking('read_privacy_notice', 'click', 'IndexReadMoreBtn')"
-              >
-                Read More
-              </a>
-            </div>
+          <div class="col-12 text-center">
+            <h1 class="font-weight-bold">Redirect to cooby.co</h1>
           </div>
-
-          <div class="col-12 col-md-7 text-center d-flex align-items-center">
-            <div>
-              <img class="img-fluid img-responsive" src="/assets/img/extension/extension-privacy.png">
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
-
-    <!-- REVIEWS
-    ================================================== -->
-    <section class="pt-7 pt-md-10 pb-4 bg-cooby-light-gray">
-      <div class="container">
-        <div class="row flex-column justify-content-center align-items-center">
-          <h2 class="col-12 font-weight-bold text-center">Hear What Our Customers Say</h2>
-          <div class="col-12 col-md-8 text-center">
-            <p>
-              Over 90% of our customers are more than happy with WhatsApp Tabs. Hear what our customers say about our product in 
-              <a target="_blank" class="text-green" href="https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm">Chrome Store reviews</a>:
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- cards -->
-      <div class="container-fluid">
-        <div class="row flex-nowrap py-8 px-4 px-md-7 px-lg-10" id="review_cards_container">
-
-          <!-- card structure-->
-          <!-- <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 d-flex">
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-              <a class="card-body">
-                <div class="d-flex mb-4 align-items-center">
-                  <div class="avatar avatar-lg me-2 mr-3">
-                    <img src="https://www.gstatic.com/s2/contacts/images/NoPicture.gif" alt="..." class="avatar-img rounded-circle">
-                  </div>
-                  <h6 class="text-uppercase text-muted me-2 mb-0">Anandamoy Roychowdhary</h6>
-                </div>
-                <hr class="card-meta-divider">
-                <p class="mb-0 text-muted"> This is exactly what i wanted but the mobile app was lacking these useful features .Really Hats Off to you and thank you for making this extension for chat separator. </p>
-              </a>
-              <div class="card-meta mt-auto">
-                <div class="col-12 d-flex justify-content-end"> &#11088 &#11088 &#11088 &#11088 &#11088 </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-center">
-            <a 
-              target="_blank"
-              class="roadmap-cta-btn btn btn-primary-soft lift mb-6"
-              href="https://feedback.cooby.co"
-              onclick="gaTracking('visit_roadmap', 'click', 'IndexSeeRoadMapBtn')"
-            >
-              See Roadmap
-            </a>
-            <span style="width: 36px;"></span>
-            <a
-              target="_blank" 
-              class="roadmap-cta-btn btn btn-primary lift mb-6"
-              href="https://changelog.cooby.co"
-              onclick="gaTracking('visit_changelog', 'click', 'IndexVisitRecentUpdatesBtn')"
-            >
-              View Recent Updates
-            </a>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- FOOTER
-    ================================================== -->
-    <footer class="py-8 py-md-11  bg-cooby-light-gray" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-4">
-
-            <!-- Brand -->
-            <img src="../assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
-
-            <!-- Text -->
-            <p class="text-primary mb-2">
-              Bring your customer communication<br>
-              to order on WhatsApp
-            </p>
-
-            <!-- Social -->
-            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-              <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')" target="_blank">
-                  <img src="../assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item mr-3">
-                <a href="https://twitter.com/JoinCooby" class="text-decoration-none" onclick="gaTracking('visit_twitter', 'click', 'clickTwitterBtn')" target="_blank">
-                  <img src="../assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/groups/coobians/" class="text-decoration-none" onclick="gaTracking('visit_facebook_group', 'click', 'clickFacebookGroupBtn')" target="_blank">
-                  <img src="../assets/img/icons/social/community.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="col-12 col-md-2 col-lg-1">
-            <a class="text-reset" href="/extension/pricing.html">
-              Pricing
-            </a>
-          </div>
-
-          <div class="col-12 col-md-2 col-lg-1">
-            <a class="text-reset" href="/extension/support.html">
-              Support
-            </a>
-          </div>
-
-          <div class="col-12 col-md-2 col-lg-1">
-            <a class="text-reset" href="/extension/privacy.html">
-              Privacy
-            </a>
-          </div>
-      
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </footer>
-
-
-    <!-- JAVASCRIPT
-    ================================================== -->
-    <!-- Libs JS -->
-    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="../assets/libs/aos/dist/aos.js"></script>
-    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="../assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="../assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="../assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="../assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="../assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="../assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="../assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="../assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="../assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="../assets/libs/quill/dist/quill.min.js"></script>
-    <script src="../assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="../assets/libs/typed.js/lib/typed.min.js"></script>
-
-    <!-- Map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-
-    <!-- Theme JS -->
-    <script src="../assets/js/theme.min.js"></script>
-
-
-    <!-- External Lib -->
-    <!-- Start of ChatBot (www.chatbot.com) code -->
-    <!-- 
-    <script type="text/javascript">
-        window.__be = window.__be || {};
-        window.__be.id = "60026dc57ad4d00007fa92fe";
-        (function() {
-            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-        })();
-
-        window.BE_API = window.BE_API || {};
-
-        function openChatbotWindow() {
-          window.BE_API.openChatWindow();
-        }
-    </script>
-    -->
-    <!-- End of ChatBot code -->
-
-
+    
   </body>
-  <style>
-     /* for Chrome */
-     #review_cards_container {
-       overflow-x: scroll;
-     }
-     #review_cards_container::-webkit-scrollbar {
-      display: none;
-    }
-
-    .quote-paragraph {
-      font-size: 1.2rem;
-    }
-    @media only screen and (max-width: 768px) {
-      .quote-paragraph {
-        font-size: 1rem;
-      }
-    }
-
-    .review-session-btn {
-      width: 260px;
-    }
-
-    .roadmap-cta-btn {
-      width: 220px;
-    }
-    @media only screen and (max-width: 768px) {
-      .roadmap-cta-btn {
-        width: 100%;
-      }
-    }
-  </style>
 </html>

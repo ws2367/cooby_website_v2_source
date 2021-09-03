@@ -9,19 +9,23 @@
     <meta name="facebook-domain-verification" content="7kq09yr5tns7v7k49aff2vde03ab9j" />
 
     <!-- Open Graph -->
-    <title>Cooby | Build Stronger Sales Relationships</title>
-    <meta property="og:title" content="Cooby | Build Stronger Sales Relationships" />
     <meta property="og:type" content="website" />
 
     
     
-      <meta name="description" content="Build your sales engine without a spreadsheet. Strengthen your sales relationships." />
-      <meta property="og:description" content="Build your sales engine without a spreadsheet. Strengthen your sales relationships." />
+      <title>Cooby | Take Control of Your WhatsApp Chats</title>
+      <meta property="og:title" content="Cooby | Take Control of Your WhatsApp Chats" />
     
 
     
     
-      <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_eng.jpg" />
+      <meta name="description" content="Declutter your mindspace, reduce noise and organize your chats" />
+      <meta property="og:description" content="Declutter your mindspace, reduce noise and organize your chats" />
+    
+
+    
+    
+      <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_extension.png" />
     
 
     <meta property="og:url" content="https://cooby.co" />
@@ -173,7 +177,6 @@
     ================================================== -->
     <!-- SIGNUP MODAL
     ================================================== -->
-    <!-- Signup: Horizontal  ================================================== -->
     <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -290,7 +293,13 @@
                       <!-- Why Cooby -->
                       <div class="col-12 col-md-6">
                         <div class="form-label-group">
-                          <select class="form-control form-select custom-select" aria-label="Why Cooby?" name="motivation" required>
+                          <select
+                            class="form-control form-select custom-select"
+                            style="padding: 0 12px;"
+                            aria-label="Why Cooby?"
+                            name="motivation"
+                            required
+                          >
                             <option value="">Why Cooby?</option>
                             <option value="Organize and tag clients">Organize and tag clients</option>
                             <option value="Import information from WhatsApp">Import information from WhatsApp</option>
@@ -307,7 +316,13 @@
                       <!-- Country Code -->
                       <div class="col-12 col-md-6">
                         <div class="form-label-group" style="text-align:left">
-                          <select class="form-control form-select custom-select" id="country-code-selector" aria-label="Country Code" name="countryCode">
+                          <select
+                            class ="form-control form-select custom-select"
+                            style="padding: 0 12px;"
+                            id="signup_country-code-selector"
+                            aria-label="Country Code"
+                            name="countryCode"
+                          >
                             <option value="">Country Code</option>
                             <!-- load by js -->
                           </select>
@@ -338,6 +353,261 @@
                   <p class="mb-0 font-size-sm text-center text-muted" style="margin-top:10px;">
                     Already have an account? <a href="https://cooby.app.link/SqNxlEma8db?utm_content=signup_modal">Log in</a>.
                   </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="Request Received" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/schedule.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center pt-5 mb-1" id="modalExampleTitle">
+              Request Received
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+              Thanks! Our enterprise experts will be in touch shortly. 
+            </p>
+
+            <!-- Button -->
+            <a class="btn btn-block btn-primary mt-3 lift" id="confirmationModalBtn">
+              Done!
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- deprecated -->
+    <div class="modal fade" id="downloadAndScheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center mb-4" id="modalExampleTitle">
+              Download Cooby App
+            </h2>
+            <div class="text-center">
+              <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1 mb-4" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+                <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+              </a>
+              <!-- Text -->
+              <p class="font-size-lg text-center text-muted">
+                Then schedule a time with us. We'll show you the product demo via video chat at a time of your convience.
+              </p>
+              <p class="font-size-sm text-center text-muted mb-6 mb-md-8">
+                Do you use Android? No worries. Schedule a demo for Cooby Web app 👇
+              </p>
+            </div>
+            <!-- Form -->
+            <!-- Submit -->
+            <a class="btn btn-block btn-primary mt-3 lift"
+               id='downloadAndScheduleModalBtn'
+               href='https://calendly.com/cooby/cooby-onboarding-session'
+               target="_blank">
+              Let's schedule!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalRequestFormHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalRequestFormHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row">
+              <div class="col-12 col-md-5">
+               <div class="bg-cover card-body bg-cooby-light-gray h-100">
+                <!-- Close -->
+                  <button type="button" class="modal-close close d-md-none" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h6 class="text-uppercase text-primary font-weight-bold">
+                    Contact us
+                  </h6>
+                  <h2 class="font-weight-bold">
+                    We Help You Transform Your Sales Teams.
+                  </h2>
+                  <!-- Text -->
+                  <p class="font-weight-bold mb-6 mb-md-0">
+                    Trusted by over <span data-toggle="countup" data-from="0" data-to="3000" data-aos data-aos-id="countup:in">0</span> sales leaders worldwide.
+                  </p>
+              
+                  <ul class="list-group">
+                    <li class="compressed-list bg-cooby-light-gray" style="list-style: none; margin:30px auto 10px 0;">
+                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                        <i class="fe fe-check"></i>
+                        </div>
+                        The only revenue intelligence software for WhatsApp sales teams
+                    </li>
+                    <li class="compressed-list bg-cooby-light-gray" style="list-style: none; margin:0 auto 10px 0;">
+                      <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                        <i class="fe fe-check"></i>
+                        </div>
+                        Free consultation
+                    </li>
+                    <li class="compressed-list bg-cooby-light-gray" style="list-style: none;">
+                      <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                        <i class="fe fe-check"></i>
+                        </div>
+                        Guaranteed the transformative way of sales management
+                    </li>
+                  </ul>
+                  <p class="mt-6 mb-6 mb-md-0">
+                    Questions? Submit the form and we'll be in touch.
+                  </p>
+
+                  <!-- Shape -->
+                  <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="card-body" style="text-align:center;">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalRequestFormHorizontalTitle">
+                    Science Works for Sales Too.
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Just a few final details to set up your demo!
+                  </p>
+
+                  <form id="request_form">
+                    <div class="row">
+                      <!-- First Name -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <input type="text" class="form-control form-control-flush" name="firstName" placeholder="First Name" required>
+                          <label for="registrationFirstName">First Name</label>
+                        </div>
+                      </div>
+                      <!-- Last Name -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <input type="text" class="form-control form-control-flush" name="lastName" placeholder="Last Name" required>
+                          <label for="registrationLastName">Last Name</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <!-- Email -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <input type="email" class="form-control form-control-flush" name="email" placeholder="Email" required>
+                          <label for="registrationEmail">Email</label>
+                        </div>
+                      </div>
+                      <!--Title -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <input type="text" class="form-control form-control-flush" name="title" placeholder="Title">
+                          <label for="registrationRole">Title</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <!-- Company -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <input type="text" class="form-control form-control-flush" name="company" placeholder="Company">
+                          <label for="registrationCompany">Company</label>
+                        </div>
+                      </div>
+                      <!-- Company Size -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group">
+                          <select
+                            class="form-control form-select custom-select"
+                            style="padding: 0 12px;"
+                            aria-label="Company Size"
+                            name="companySize"
+                            required
+                          >
+                            <option value="">Company  Size</option>
+                            <option value="1-10 employees">1-10 employees</option>
+                            <option value="11-100 employees">11-100 employees</option>
+                            <option value="101-1000 employees">101-1000 employees</option>
+                            <option value="1001+ employees">1001+ employees</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <!-- Country Code -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <select
+                            class="form-control form-select custom-select"
+                            style="padding: 0 12px;"
+                            id="workspace_country-code-selector"
+                            aria-label="Country Code"
+                            name="countryCode"
+                          >
+                            <option value="">Country Code</option>
+                            <!-- load by js -->
+                          </select>
+                        </div>
+                      </div>
+                      <!-- WA Number -->
+                      <div class="col-12 col-md-6">
+                        <div class="form-label-group" style="text-align:left">
+                          <input type="tel" class="form-control form-control-flush" name="phone" placeholder="WhatsApp number">
+                          <label for="registrationPhone">WhatsApp number</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+
+                        <!-- Submit -->
+                        <button class="btn btn-primary mt-3 lift w-custom">
+                          Submit
+                        </button>
+
+                      </div>
+                    </div>
+                  </form>
 
                 </div>
               </div>
@@ -387,7 +657,7 @@
       </div>
     </div>
 
-
+    <!-- deprecated -->
     <div class="modal fade" id="downloadAndScheduleModal" tabindex="-1" role="dialog" aria-labelledby="Schedule Demo" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -457,76 +727,47 @@
 
           <!-- Navigation -->
           <ul class="navbar-nav ml-auto" style="margin:auto;">
-            <li class="nav-item dropdown d-none">
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-muted" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Use Cases
+                Products
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./use-cases/insurance.html">Insurance</a>
-                <a class="dropdown-item" href="./use-cases/direct-sales.html">Direct Sales</a>
+              <div id="navbar-product-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item @@extension" href=".">Cooby Extension</a>
+                <a class="dropdown-item @@workspace" href="./workspace.html">Cooby Workspace</a>
+                <a class="dropdown-item @@mobileCRM" href="./mobile-crm.html">Cooby Mobile CRM</a>
               </div>
             </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" id="navbarProduct" href="./features.html">
-                Features
-              </a>
-            </li>
+
             <li class="nav-item">
-              <a class="nav-link" id="navbarService" href="./extension/">
-                WhatsApp Tabs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="navbarContact" href="./insights.html">
-                Cooby Insights
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="navbarTeam" href="./pricing.html">
+              <a class="nav-link" id="navbarPricing" href="./pricing.html">
                 Pricing
               </a>
             </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" id="navbarTeam" href="./blog.html">
-                Blog
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPrivacy" href="./privacy.html">
+                Privacy
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="navbarContact" href="./support.html">
+              <a class="nav-link" id="navbarSupport" href="./support.html">
                 Support
               </a>
             </li>
+        
+            <!-- Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-muted" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Language
+                Join Community
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item active" href=".">English</a>
-                <a class="dropdown-item" href="./zh-tw">繁體中文</a>
+              <div id="navbar-community-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item @@impact" href="./impact.html">Stories of Impact</a>
+                <a class="dropdown-item active" href="./blog.html">Blog</a>
               </div>
-             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto d-none" style="margin-right: 1rem;">
-            <li class="nav-item">
-              <a id="signInSignUp"
-                 href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
-                 target="_blank"
-                 onclick="gaTracking('log_in', 'click', 'Navbar')"
-                 >
-                Log In
-              </a>
             </li>
-          </ul>
-          <!-- Button -->
-          <div class="text-center pb-md-0 pb-8  d-none">
-            <a class="navbar-btn btn btn-sm btn-primary lift"
-               data-toggle="modal"
-               href="#modalSignupHorizontal"
-               onclick="gaTracking('sign_up', 'click', 'Navbar')">
-              Try Now
-            </a>
-          </div>
 
+          </ul>
 
         </div>
 
@@ -579,10 +820,12 @@
           <div class="col-12">
             
             <!-- Heading -->
-            <h2 class="mb-0">Latest Stories</h2>
+            <h2 class="mb-0">Latest Articles</h2>
 
             <!-- Sub Heading -->
-            <p class="mb-5 text-muted">These span the grid's entire width with several options.</p>
+            <p class="mb-5 text-muted">
+              
+            </p>
 
           </div>
         </div> <!-- / .row -->
@@ -596,7 +839,7 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- ARTICLES
+    <!-- ARTICLES (deprecated)
     ================================================== -->
     <section class="pb-8 pt-7 pb-md-11 pt-md-10 d-none">
       <div class="container">
@@ -943,36 +1186,39 @@
     <footer class="py-8 py-md-11 bg-gray-200 bg-cooby-light-gray" id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-4">
+          <div class="col-12 col-md-4 col-lg-4 d-flex flex-column justify-content-between">
 
             <!-- Brand -->
-            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
-
-            <!-- Text -->
-            <p class="text-primary mb-2">
-              Build Stronger <br>Sales Relationships
-            </p>
+            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2" style="width: 30%;">
 
             <!-- Social -->
-            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-              <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')" target="_blank">
-                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item mr-3">
-                <a href="https://twitter.com/JoinCooby" class="text-decoration-none" onclick="gaTracking('visit_twitter', 'click', 'clickTwitterBtn')" target="_blank">
-                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-            </ul>
+            <div class="mb-6">
+              <ul class="list-unstyled list-inline list-social">
+                <li class="list-inline-item list-social-item mr-3">
+                  <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')" target="_blank">
+                    <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item mr-3">
+                  <a href="https://twitter.com/JoinCooby" class="text-decoration-none" onclick="gaTracking('visit_twitter', 'click', 'clickTwitterBtn')" target="_blank">
+                    <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item mr-3">
+                  <a href="https://www.facebook.com/groups/coobians/" class="text-decoration-none" onclick="gaTracking('visit_twitter', 'click', 'clickCommunityBtn')" target="_blank">
+                    <img src="./assets/img/icons/social/community.svg" class="list-social-icon" alt="...">
+                  </a>
+                </li>
+              </ul>
+              <p class="text-gray mb-0" style="font-size: 12px;">San Francisco, California 94104-5401 US</p>
+            </div>
 
           </div>
 
           <div class="col-6 col-md-4 col-lg-2">
 
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-primary">
+            <h6 class="font-weight-bold text-uppercase">
               Product
             </h6>
 
@@ -980,33 +1226,53 @@
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
                 <a href="./" class="text-reset">
-                  Overview
+                  Cooby Extension
                 </a>
               </li>
               <li class="mb-3">
-                <a href="./features.html" class="text-reset">
-                  Features
+                <a href="./workspace.html" class="text-reset">
+                  Cooby Workspace
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./mobile-crm.html" class="text-reset">
+                  Mobile CRM
+                </a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="https://feedback.cooby.co"
+                  class="text-reset"
+                  target="_blank"
+                  onclick="gaTracking('visit_roadmap', 'click', 'FooterRoadMapBtn')"
+                >
+                  Roadmap
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0 d-none">
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-primary">
-              Legal
+            <h6 class="font-weight-bold text-uppercase">
+              Learning
             </h6>
 
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="./terms.html" class="text-reset">
-                  User Terms of Service
+                <a href="./support.html" class="text-reset">
+                  Support
                 </a>
               </li>
               <li class="mb-3">
-                <a href="./privacy.html" class="text-reset">
-                  Privacy Policy
+                <a href="./impact.html" class="text-reset">
+                  Stories of Impact
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./blog.html" class="text-reset">
+                  Blog
                 </a>
               </li>
             </ul>
@@ -1015,38 +1281,37 @@
           <div class="col-6 col-md-4 col-lg-2">
 
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-primary">
+            <h6 class="font-weight-bold text-uppercase">
               Company
             </h6>
 
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="./careers.html" class="text-reset">
-                  Careers
-                </a>
-              </li>
-              <li class="mb-3">
                 <a href="mailto:support@cooby.co" class="text-reset">
-                  Email Us
+                  Contact Us
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
-                  Line Us
+                <a href="./privacy.html" class="text-reset">
+                  Privacy Notice
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./careers.html" class="text-reset" target="_blank">
+                  Career
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-6 col-md-4 col-lg-2 d-none">
-                <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
-                  <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
-                </a>
+            <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+              <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+            </a>
 
-                <a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
-                  <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
-                </a>
-
+            <a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
+              <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
+            </a>
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->

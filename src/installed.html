@@ -19,6 +19,7 @@
       var onboardingDocLink = 'https://onboarding.cooby.co'
 
       gaTracking('installed_extension', 'click', 'installedPage')
+      fbq('track', 'Install')
       window.location.replace(onboardingDocLink)
     })
   </script>

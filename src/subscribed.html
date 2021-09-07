@@ -19,6 +19,7 @@
       var whatsAppLink = 'https://web.whatsapp.com/?type=upgrade&plan=personal'
 
       gaTracking('subscribed_extension', 'click', 'subscribedPage')
+      fbq('track', 'Subscribe')
       window.location.replace(whatsAppLink)
     })
   </script>

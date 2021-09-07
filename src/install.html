@@ -19,6 +19,7 @@
       var chromeStoreLink = 'https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm'
 
       gaTracking('install_extension', 'click', 'installPage')
+      fbq('track', 'ChromeStoreVisit')
       window.location.replace(chromeStoreLink)
     })
   </script>

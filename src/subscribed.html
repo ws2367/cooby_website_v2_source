@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html")
+  </head>
+  <body class="font-eng">
+
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="width: 100vw; height: 100vh;">
+      <div class="spinner-border text-primary mb-4" role="status"></div>
+      <h6 class="text-primary">Redirecting...</h6>
+    </div>
+    
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+  <script>
+    $(function() {
+      var whatsAppLink = 'https://web.whatsapp.com/?type=upgrade&plan=personal'
+
+      gaTracking('subscribed_extension', 'click', 'subscribedPage')
+      fbq('track', 'Subscribe')
+      window.location.replace(whatsAppLink)
+    })
+  </script>
+</html>

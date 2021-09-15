@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cooby | Redeem Your PitchGround Coupon Code"
+  })
+</head>
+
+<body class="font-eng">
+
+  <!-- NAVBAR
+    ================================================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container"
+  })
+
+  <section class="pt-10 pt-md-11 pb-6 pb-md-8 bg-cooby-indigo" id="welcome">
+    <!-- Shape -->
+    <div class="shape shape-blur-3 svg-shim text-white">
+      @@include("assets/img/shapes/blurs/blur-3.svg")
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-7 pt-10 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-3 font-weight-bold text-white">
+            Cooby &#10084 PitchGround
+          </h1>
+
+          <!-- Text -->
+          <p class="font-size-lg text-white mb-6 mb-md-8" style="width:90%; margin:auto;">
+            Hey, please share your basic info, email, password, and PitchGround code to get enrolled in <b>Cooby</b> for <b>lifetime access</b>.<br><br>
+            After your submission, you'll see the download link for Cooby extension. Download the app and you're good to go! <br>
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- SHAPE
+    ================================================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+      @@include("assets/img/shapes/curves/curve-1.svg")
+    </div>
+  </div>
+
+  <section class="container mt-8 mb-10">
+    <div class="container">
+
+      <!-- <div class="row justify-content-center mb-4">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h1 class="font-weight-bold">
+              Fill the information
+            </h1>
+          </div>
+        </div> -->
+
+      <form class="row" id="redemption_form">
+        <!-- Full Name -->
+        <div class="col-12 order-1 col-lg-6 order-lg-1 px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="text" class="form-control form-control-flush" name="name" placeholder="Full Name" required>
+            <label for="registrationFullName">Full Name</label>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="col-12 order-2 col-lg-6 order-lg-2 px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="text" class="form-control form-control-flush" name="company" placeholder="Company" required>
+            <label for="registrationCompany">Company</label>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <div class="col-12 order-3 col-lg-6 order-lg-3 px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="text" class="form-control form-control-flush" name="title" placeholder="Title" required>
+            <label for="registrationTitle">Title</label>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="col-12 order-4 col-lg-6 order-lg-4  px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="email" class="form-control form-control-flush" name="email" placeholder="Email" required>
+            <label for="registrationEmail">Email</label>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="col-12 order-5 col-lg-6 order-lg-5 px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="password" class="form-control form-control-flush" name="password" placeholder="Password" minlength="8" required>
+            <label for="registrationPassword">Password</label>
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="col-12 order-6 col-lg-6 order-lg-6 px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="password" class="form-control form-control-flush" name="confirmPassword" placeholder="confirm Password" minlength="8" required>
+            <label for="registrationPassword">Confrim Password</label>
+          </div>
+        </div>
+
+        <!-- Coupon Code -->
+        <div class="col-12 order-7 order-lg-7 px-4">
+          <div class="form-label-group" style="text-align:left">
+            <input type="text" class="form-control form-control-flush" name="redemption_code" placeholder="Coupon Code" required>
+            <label for="registrationPassword">Coupon Code</label>
+          </div>
+        </div>
+
+        <!-- Terms of use -->
+        <div class="col-12 order-8 order-lg-8 px-7 d-none">
+          <div class="form-group" style="text-align:left">
+            <input type="checkbox" class="form-check-input" name="termsOfUse">
+            <label class="form-check-label text-gray-800" for="registrationTermsOfUse">
+              I agree the <a href="@@webRoot/privacy">Terms of use</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="col-12 order-9 order-lg-9 px-7 mt-4">
+          <button class="btn btn-primary lift w-100" id="redeem_button">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+            <p class="my-0">Activate Account</p>
+          </button>
+        </div>
+
+      </form> <!-- / .form -->
+
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="Error" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+
+          <!-- Heading -->
+          <h2 class="font-weight-bold text-center my-2" id="modalExampleTitle">
+            Error
+          </h2>
+
+          <!-- Error Msg -->
+          <p class="font-size-lg text-center text-muted mb-4 mb-md-4" id="errorMsg"></p>
+
+          <!-- Button -->
+          <button class="btn btn-primary lift w-100" data-dismiss="modal">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER
+        ================================================== -->
+  @@include("partials/footer.html")
+
+  <!-- JAVASCRIPT
+        ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

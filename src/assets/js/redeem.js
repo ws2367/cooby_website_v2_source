@@ -57,7 +57,12 @@ $(function() {
           },
           success: function(res) {
             setActivateAccountLoading(false)
-            window.location = window.location.protocol + '/redeem-success.html?email=' + data.email
+            var pathnames = window.location.pathname.split('/')
+            if (pathnames.includes('appsumo') || pathnames.includes('appsumo.html')) {
+              window.location = window.location.protocol + '/redeem-success.html?email=' + data.email
+            } else if (pathnames.includes('pitchground') || pathnames.includes('pitchground.html')) {
+              window.location = window.location.protocol + '/ext-redeem-success.html?email=' + data.email
+            }
           },
           error: function(res) {
             console.log('info', res)

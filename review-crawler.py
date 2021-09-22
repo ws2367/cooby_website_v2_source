@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 import json
 
-baseUrl = 'https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm'
+baseUrl = 'https://chrome.google.com/webstore/detail/cooby-supercharge-whatsap/hcikfoejbgdmajlbhadhfchoekcoablm'
 
 options = Options()
 options.add_argument('--disable-notifications')

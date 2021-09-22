@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 import json
 
-baseUrl = 'https://chrome.google.com/webstore/detail/whatsapp-tabs-by-cooby/hcikfoejbgdmajlbhadhfchoekcoablm'
+baseUrl = 'https://chrome.google.com/webstore/detail/cooby-supercharge-whatsap/hcikfoejbgdmajlbhadhfchoekcoablm'
 
 options = Options()
 options.add_argument('--disable-notifications')
@@ -16,7 +16,7 @@ chrome.get(baseUrl)
 print('waiting for 2s...')
 time.sleep(2)
 
-reviewBtn = chrome.find_element_by_id(':24')
+reviewBtn = chrome.find_element_by_id(':1a')
 reviewBtn.click()
 
 soup = BeautifulSoup(chrome.page_source, 'html.parser') #將網頁資料以html.parser
